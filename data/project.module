@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<module category="" descriptorversion="1.0" entrypoint="CQGas/Start" forcesubdialogcall="false" frameworkversion="06.00.11.03" iconlarge="icons/defaultapplicationlg.gif" iconsmall="icons/defaultapplicationsm.gif" modifyInputs="false" modifyOutputs="false" outputmultipart="false" paramasnamelist="false" provider="" submitmethod="get" version="1.0.0" webname="CQGas">
+<module category="" descriptorversion="1.0" entrypoint="CQGas/Start" forcesubdialogcall="false" frameworkversion="07.01.08.04" iconlarge="icons/defaultapplicationlg.gif" iconsmall="icons/defaultapplicationsm.gif" modifyInputs="false" modifyOutputs="false" nature="" outputmultipart="false" paramasnamelist="false" provider="" submitmethod="get" version="1.0.0" webname="CQGas">
     <description/>
     <language name="Chinese" root="zh-cn"/>
     <language name="English" root="en-us"/>

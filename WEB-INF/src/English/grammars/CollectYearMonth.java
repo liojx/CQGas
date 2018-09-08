@@ -21,7 +21,7 @@ public class CollectYearMonth extends com.avaya.sce.runtime.Grammar {
         setBuiltin(true);
         setBuiltinMode("dtmf");
         setType("digits");
-        setOptions("bWlubGVuZ3RoPTY7bWF4bGVuZ3RoPTc=");
+        setOptions("minlength=6;maxlength=7");
 		//}}END:CLASS:CONSTRUCTOR
     }
 

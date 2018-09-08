@@ -21,7 +21,7 @@ public class CollectCustNum extends com.avaya.sce.runtime.Grammar {
         setBuiltin(true);
         setBuiltinMode("dtmf");
         setType("digits");
-        setOptions("bWlubGVuZ3RoPTU7bWF4bGVuZ3RoPTEx");
+        setOptions("minlength=5;maxlength=11");
 		//}}END:CLASS:CONSTRUCTOR
     }
 
