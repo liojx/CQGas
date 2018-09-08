@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<phraseset audiolocation="internal" filename="CQGas" version="1.0">
+    <phrase version="1.0">
+        <displayname>Noinput_003</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>Noinput_003.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>Nomatch_004</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>Nomatch_004.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>ErrorCtsLimit_005</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>ErrorCtsLimit_005.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>TransferAgent_008</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>TransferAgent_008.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>Welcome_010</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>Welcome_010.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>ErrorCustNo_022</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>ErrorCustNo_022.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>InputMonth_006</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>InputMonth_006.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>ErrorMonth_023</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>ErrorMonth_023.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>MainMenu_001</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>MainMenu_001.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>InputCustNum_002</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>InputCustNum_002.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>blank_025</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>black_025.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>ReplayBack_009</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>ReplayBack_009.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>0601</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>0601.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>0602</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>0602.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>0603</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>0603.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>0604</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>0604.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>0605</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>0605.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>BusiConsMenu_019</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>BusiConsMenu_019.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>NoticeMenu_007</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>NoticeMenu_007.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>ServiceMenu_011</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>ServiceMenu_011.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>waiting</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>waiting.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>0701</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>0701.wav</audiofile>
+    </phrase>
+</phraseset>
