@@ -154,8 +154,6 @@
 	<classpathentry kind="lib" path="WEB-INF/lib/wsdl4j-1.6.3.jar"/>
 	<classpathentry kind="lib" path="WEB-INF/lib/xml-resolver-1.2.jar"/>
 	<classpathentry kind="lib" path="WEB-INF/lib/xmlschema-core-2.1.0.jar"/>
-	<classpathentry kind="lib" path="WEB-INF/lib/avdbop-rt-07.01.08.04.jar"/>
-	<classpathentry kind="lib" path="WEB-INF/lib/aesclient-07.01.08.04.jar"/>
 	<classpathentry kind="lib" path="WEB-INF/lib/scert-07.01.08.04.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/servlet-api.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/jasper.jar"/>
@@ -163,5 +161,7 @@
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/el-api.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/annotations-api.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/scertcommon-07.01.08.04.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/avdbop-rt.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/aesclient-07.01.08.04.jar"/>
 	<classpathentry kind="output" path="WEB-INF/classes"/>
 </classpath>
