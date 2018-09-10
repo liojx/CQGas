@@ -75,7 +75,7 @@ public class GotoBusiness extends com.avaya.sce.runtime.Data {
 		}
 		actions = null;
 
-		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition1", "MainMenu:utterance", com.avaya.sce.runtime.Expression.STRING_EQUAL, "1", false).setDebugId(650)).evaluate(mySession)) {
+		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition1", "MainMenuDay:utterance", com.avaya.sce.runtime.Expression.STRING_EQUAL, "1", false).setDebugId(650)).evaluate(mySession)) {
 			actions = new java.util.ArrayList(1);
 			actions.add(new com.avaya.sce.runtime.Next("GasFeeQry", "查费").setDebugId(652));
 			if(evaluateActions(actions, mySession)) {
@@ -83,7 +83,7 @@ public class GotoBusiness extends com.avaya.sce.runtime.Data {
 			}
 			actions = null;
 
-		} else if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition2", "MainMenu:utterance", com.avaya.sce.runtime.Expression.STRING_EQUAL, "2", false).setDebugId(651)).evaluate(mySession)) {
+		} else if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition2", "MainMenuDay:utterance", com.avaya.sce.runtime.Expression.STRING_EQUAL, "2", false).setDebugId(651)).evaluate(mySession)) {
 			actions = new java.util.ArrayList(1);
 			actions.add(new com.avaya.sce.runtime.Next("ToRenGong", "事故报警").setDebugId(669));
 			if(evaluateActions(actions, mySession)) {
@@ -91,7 +91,7 @@ public class GotoBusiness extends com.avaya.sce.runtime.Data {
 			}
 			actions = null;
 
-		} else if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition3", "MainMenu:utterance", com.avaya.sce.runtime.Expression.STRING_EQUAL, "3", false).setDebugId(653)).evaluate(mySession)) {
+		} else if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition3", "MainMenuDay:utterance", com.avaya.sce.runtime.Expression.STRING_EQUAL, "3", false).setDebugId(653)).evaluate(mySession)) {
 
 			if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition4", "ServiceApplyMenu:utterance", com.avaya.sce.runtime.Expression.STRING_EQUAL, "1", false).setDebugId(654)).evaluate(mySession)) {
 				actions = new java.util.ArrayList(1);
@@ -111,7 +111,7 @@ public class GotoBusiness extends com.avaya.sce.runtime.Data {
 
 			}
 
-		} else if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition6", "MainMenu:utterance", com.avaya.sce.runtime.Expression.STRING_EQUAL, "4", false).setDebugId(659)).evaluate(mySession)) {
+		} else if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition6", "MainMenuDay:utterance", com.avaya.sce.runtime.Expression.STRING_EQUAL, "4", false).setDebugId(659)).evaluate(mySession)) {
 			actions = new java.util.ArrayList(1);
 			actions.add(new com.avaya.sce.runtime.Next("ToRenGong", "投诉建议").setDebugId(663));
 			if(evaluateActions(actions, mySession)) {
@@ -119,7 +119,7 @@ public class GotoBusiness extends com.avaya.sce.runtime.Data {
 			}
 			actions = null;
 
-		} else if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition7", "MainMenu:utterance", com.avaya.sce.runtime.Expression.STRING_EQUAL, "5", false).setDebugId(660)).evaluate(mySession)) {
+		} else if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition7", "MainMenuDay:utterance", com.avaya.sce.runtime.Expression.STRING_EQUAL, "5", false).setDebugId(660)).evaluate(mySession)) {
 
 			if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition8", "NoticeMenu:utterance", com.avaya.sce.runtime.Expression.STRING_EQUAL, "1", false).setDebugId(664)).evaluate(mySession)) {
 				actions = new java.util.ArrayList(1);
@@ -139,7 +139,7 @@ public class GotoBusiness extends com.avaya.sce.runtime.Data {
 
 			}
 
-		} else if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition10", "MainMenu:utterance", com.avaya.sce.runtime.Expression.STRING_EQUAL, "6", false).setDebugId(661)).evaluate(mySession)) {
+		} else if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition10", "MainMenuDay:utterance", com.avaya.sce.runtime.Expression.STRING_EQUAL, "6", false).setDebugId(661)).evaluate(mySession)) {
 			actions = new java.util.ArrayList(1);
 			actions.add(new com.avaya.sce.runtime.Next("BusiConsMenu", "业务咨询").setDebugId(666));
 			if(evaluateActions(actions, mySession)) {
@@ -147,7 +147,7 @@ public class GotoBusiness extends com.avaya.sce.runtime.Data {
 			}
 			actions = null;
 
-		} else if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition11", "MainMenu:utterance", com.avaya.sce.runtime.Expression.STRING_EQUAL, "7", false).setDebugId(662)).evaluate(mySession)) {
+		} else if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition11", "MainMenuDay:utterance", com.avaya.sce.runtime.Expression.STRING_EQUAL, "7", false).setDebugId(662)).evaluate(mySession)) {
 			actions = new java.util.ArrayList(1);
 			actions.add(new com.avaya.sce.runtime.Next("SafeKnowledge", "安全常识").setDebugId(640));
 			if(evaluateActions(actions, mySession)) {

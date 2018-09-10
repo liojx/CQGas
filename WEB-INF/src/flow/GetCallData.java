@@ -6,10 +6,8 @@ import java.util.Map;
 
 import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
-import org.springframework.dao.EmptyResultDataAccessException;
 
 import beans.CallLogVO;
-import beans.CustomerVO;
 import beans.TransferVO;
 
 import com.avaya.sce.runtimecommon.IVariableField;
@@ -166,7 +164,7 @@ public class GetCallData extends com.avaya.sce.runtime.BasicServlet {
 		com.avaya.sce.runtime.Goto aGoto = null;
 		list = new java.util.ArrayList(1);
 
-		aGoto = new com.avaya.sce.runtime.Goto("CheckNodeCode", 0, true, "Default");
+		aGoto = new com.avaya.sce.runtime.Goto("Welcome", 0, true, "Default");
 		list.add(aGoto);
 
 		return list;

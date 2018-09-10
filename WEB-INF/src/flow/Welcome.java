@@ -121,7 +121,7 @@ public class Welcome extends com.avaya.sce.runtime.Form {
 	 */
 	public com.avaya.sce.runtime.Submit getSubmit(com.avaya.sce.runtimecommon.SCESession mySession) {
 		com.avaya.sce.runtime.Submit submit = null;
-		submit = new com.avaya.sce.runtime.Submit("waitblank");
+		submit = new com.avaya.sce.runtime.Submit("JudgeDayOrNight");
 		return submit;
 	}
 	/**

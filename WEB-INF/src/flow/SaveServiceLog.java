@@ -48,7 +48,7 @@ public class SaveServiceLog extends com.avaya.sce.runtime.BasicServlet {
 	public void servletImplementation(com.avaya.sce.runtimecommon.SCESession mySession) {
 
 		// TODO: Add your code here!
-		IVariableField menuField = mySession.getVariableField(IProjectVariables.MAIN_MENU,IProjectVariables.MAIN_MENU_FIELD_UTTERANCE);
+		IVariableField menuField = mySession.getVariableField(IProjectVariables.MAIN_MENU_DAY,IProjectVariables.MAIN_MENU_DAY_FIELD_UTTERANCE);
 		
 		IVariableField callIdField = mySession.getVariableField(IProjectVariables.CQVALUE,IProjectVariables.CQVALUE_FIELD_CALLID);
 		String menuKey = menuField.getStringValue();

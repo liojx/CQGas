@@ -37,22 +37,25 @@ public interface IProjectVariables {
 	public static final String REDIRECTINFO = "redirectinfo";
 	public static final String GAS_FEE_QRY = "GasFeeQry";
 	public static final String SESSION = "session";
+	public static final String MAIN_MENU_DAY = "MainMenuDay";
 	public static final String DATE = "date";
-	public static final String WAITBLANK = "waitblank";
+	public static final String DAY_OR_NIGHT = "dayOrNight";
 	public static final String NOTICE_MENU = "NoticeMenu";
 	public static final String REPLAY_SAFE = "ReplaySafe";
 	public static final String REPLAY_FEE_INFO = "ReplayFeeInfo";
-	public static final String MAIN_MENU = "MainMenu";
+	public static final String MAX_ERROR_CNT = "maxErrorCnt";
 	public static final String CQVALUE = "CQValue";
 	public static final String CTICALLINFO = "cticallinfo";
 	public static final String COLLECT_MONTH = "CollectMonth";
 	public static final String DD_LAST_EXCEPTION = "ddLastException";
+	public static final String BUSINESS_QRY = "businessQry";
 	public static final String REPLAY_NOTICE = "ReplayNotice";
 	public static final String BUSI_CONS_MENU = "BusiConsMenu";
 	public static final String SATISFY_MENU = "SatisfyMenu";
 	public static final String TRANSFER_AGENT = "transferAgent";
 	public static final String SHAREDUUI = "shareduui";
 	public static final String IVRTOCSR = "IVRTOCSR";
+	public static final String MAIN_MENU_NIGHT = "MainMenuNight";
 	//}}END:PROJECT:VARIABLES
 	//{{START:PROJECT:VARIABLEFIELDS
 	public static final String TIME_FIELD_AUDIO = "audio";
@@ -118,6 +121,13 @@ public interface IProjectVariables {
 	public static final String SESSION_FIELD_VPCOVERAGETYPE = "vpcoveragetype";
 	public static final String SESSION_FIELD_VPRDNIS = "vprdnis";
 	public static final String SESSION_FIELD_VPREPORTURL = "vpreporturl";
+	public static final String MAIN_MENU_DAY_FIELD_CONFIDENCE = "confidence";
+	public static final String MAIN_MENU_DAY_FIELD_INPUTMODE = "inputmode";
+	public static final String MAIN_MENU_DAY_FIELD_INTERPRETATION = "interpretation";
+	public static final String MAIN_MENU_DAY_FIELD_NOINPUTCOUNT = "noinputcount";
+	public static final String MAIN_MENU_DAY_FIELD_NOMATCHCOUNT = "nomatchcount";
+	public static final String MAIN_MENU_DAY_FIELD_UTTERANCE = "utterance";
+	public static final String MAIN_MENU_DAY_FIELD_VALUE = "value";
 	public static final String DATE_FIELD_AUDIO = "audio";
 	public static final String DATE_FIELD_DAYOFMONTH = "dayofmonth";
 	public static final String DATE_FIELD_DAYOFWEEK = "dayofweek";
@@ -126,14 +136,6 @@ public interface IProjectVariables {
 	public static final String DATE_FIELD_MONTH = "month";
 	public static final String DATE_FIELD_MONTHINYEAR = "monthinyear";
 	public static final String DATE_FIELD_YEAR = "year";
-	public static final String WAITBLANK_FIELD_COLUMN_0 = "Column0";
-	public static final String WAITBLANK_FIELD_CONFIDENCE = "confidence";
-	public static final String WAITBLANK_FIELD_INPUTMODE = "inputmode";
-	public static final String WAITBLANK_FIELD_INTERPRETATION = "interpretation";
-	public static final String WAITBLANK_FIELD_NOINPUTCOUNT = "noinputcount";
-	public static final String WAITBLANK_FIELD_NOMATCHCOUNT = "nomatchcount";
-	public static final String WAITBLANK_FIELD_UTTERANCE = "utterance";
-	public static final String WAITBLANK_FIELD_VALUE = "value";
 	public static final String NOTICE_MENU_FIELD_CONFIDENCE = "confidence";
 	public static final String NOTICE_MENU_FIELD_INPUTMODE = "inputmode";
 	public static final String NOTICE_MENU_FIELD_INTERPRETATION = "interpretation";
@@ -155,13 +157,6 @@ public interface IProjectVariables {
 	public static final String REPLAY_FEE_INFO_FIELD_NOMATCHCOUNT = "nomatchcount";
 	public static final String REPLAY_FEE_INFO_FIELD_UTTERANCE = "utterance";
 	public static final String REPLAY_FEE_INFO_FIELD_VALUE = "value";
-	public static final String MAIN_MENU_FIELD_CONFIDENCE = "confidence";
-	public static final String MAIN_MENU_FIELD_INPUTMODE = "inputmode";
-	public static final String MAIN_MENU_FIELD_INTERPRETATION = "interpretation";
-	public static final String MAIN_MENU_FIELD_NOINPUTCOUNT = "noinputcount";
-	public static final String MAIN_MENU_FIELD_NOMATCHCOUNT = "nomatchcount";
-	public static final String MAIN_MENU_FIELD_UTTERANCE = "utterance";
-	public static final String MAIN_MENU_FIELD_VALUE = "value";
 	public static final String CQVALUE_FIELD_AGENTID = "agentid";
 	public static final String CQVALUE_FIELD_CALLID = "callid";
 	public static final String CQVALUE_FIELD_CALLTYPE = "calltype";
@@ -205,6 +200,13 @@ public interface IProjectVariables {
 	public static final String DD_LAST_EXCEPTION_FIELD_OBJECT = "object";
 	public static final String DD_LAST_EXCEPTION_FIELD_STACKTRACE = "stacktrace";
 	public static final String DD_LAST_EXCEPTION_FIELD_TYPE = "type";
+	public static final String BUSINESS_QRY_FIELD_CONFIDENCE = "confidence";
+	public static final String BUSINESS_QRY_FIELD_INPUTMODE = "inputmode";
+	public static final String BUSINESS_QRY_FIELD_INTERPRETATION = "interpretation";
+	public static final String BUSINESS_QRY_FIELD_NOINPUTCOUNT = "noinputcount";
+	public static final String BUSINESS_QRY_FIELD_NOMATCHCOUNT = "nomatchcount";
+	public static final String BUSINESS_QRY_FIELD_UTTERANCE = "utterance";
+	public static final String BUSINESS_QRY_FIELD_VALUE = "value";
 	public static final String REPLAY_NOTICE_FIELD_CONFIDENCE = "confidence";
 	public static final String REPLAY_NOTICE_FIELD_INPUTMODE = "inputmode";
 	public static final String REPLAY_NOTICE_FIELD_INTERPRETATION = "interpretation";
@@ -238,5 +240,12 @@ public interface IProjectVariables {
 	public static final String IVRTOCSR_FIELD_CSRNUM = "csrnum";
 	public static final String IVRTOCSR_FIELD_MENUCODE = "menucode";
 	public static final String IVRTOCSR_FIELD_UUI = "uui";
+	public static final String MAIN_MENU_NIGHT_FIELD_CONFIDENCE = "confidence";
+	public static final String MAIN_MENU_NIGHT_FIELD_INPUTMODE = "inputmode";
+	public static final String MAIN_MENU_NIGHT_FIELD_INTERPRETATION = "interpretation";
+	public static final String MAIN_MENU_NIGHT_FIELD_NOINPUTCOUNT = "noinputcount";
+	public static final String MAIN_MENU_NIGHT_FIELD_NOMATCHCOUNT = "nomatchcount";
+	public static final String MAIN_MENU_NIGHT_FIELD_UTTERANCE = "utterance";
+	public static final String MAIN_MENU_NIGHT_FIELD_VALUE = "value";
 	//}}END:PROJECT:VARIABLEFIELDS
 }

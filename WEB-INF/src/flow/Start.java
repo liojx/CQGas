@@ -134,6 +134,17 @@ public class Start extends com.avaya.sce.runtime.Entry {
 		session.putVariable(variable);
 
 		variableFields = new String[] {
+			IProjectVariables.MAIN_MENU_DAY_FIELD_CONFIDENCE,
+			IProjectVariables.MAIN_MENU_DAY_FIELD_INPUTMODE,
+			IProjectVariables.MAIN_MENU_DAY_FIELD_INTERPRETATION,
+			IProjectVariables.MAIN_MENU_DAY_FIELD_NOINPUTCOUNT,
+			IProjectVariables.MAIN_MENU_DAY_FIELD_NOMATCHCOUNT,
+			IProjectVariables.MAIN_MENU_DAY_FIELD_UTTERANCE,
+			IProjectVariables.MAIN_MENU_DAY_FIELD_VALUE };
+		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.MAIN_MENU_DAY, variableFields, null, session, false, false );
+		session.putVariable(variable);
+
+		variableFields = new String[] {
 			IProjectVariables.DATE_FIELD_AUDIO,
 			IProjectVariables.DATE_FIELD_DAYOFMONTH,
 			IProjectVariables.DATE_FIELD_DAYOFWEEK,
@@ -145,16 +156,7 @@ public class Start extends com.avaya.sce.runtime.Entry {
 		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.DATE, variableFields, null, session, false, false );
 		session.putVariable(variable);
 
-		variableFields = new String[] {
-			IProjectVariables.WAITBLANK_FIELD_COLUMN_0,
-			IProjectVariables.WAITBLANK_FIELD_CONFIDENCE,
-			IProjectVariables.WAITBLANK_FIELD_INPUTMODE,
-			IProjectVariables.WAITBLANK_FIELD_INTERPRETATION,
-			IProjectVariables.WAITBLANK_FIELD_NOINPUTCOUNT,
-			IProjectVariables.WAITBLANK_FIELD_NOMATCHCOUNT,
-			IProjectVariables.WAITBLANK_FIELD_UTTERANCE,
-			IProjectVariables.WAITBLANK_FIELD_VALUE };
-		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.WAITBLANK, variableFields, null, session, false, false );
+		variable = com.avaya.sce.runtime.SimpleVariable.createSimpleVariable(IProjectVariables.DAY_OR_NIGHT, "d", null, session, false, false );
 		session.putVariable(variable);
 
 		variableFields = new String[] {
@@ -190,15 +192,7 @@ public class Start extends com.avaya.sce.runtime.Entry {
 		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.REPLAY_FEE_INFO, variableFields, null, session, false, false );
 		session.putVariable(variable);
 
-		variableFields = new String[] {
-			IProjectVariables.MAIN_MENU_FIELD_CONFIDENCE,
-			IProjectVariables.MAIN_MENU_FIELD_INPUTMODE,
-			IProjectVariables.MAIN_MENU_FIELD_INTERPRETATION,
-			IProjectVariables.MAIN_MENU_FIELD_NOINPUTCOUNT,
-			IProjectVariables.MAIN_MENU_FIELD_NOMATCHCOUNT,
-			IProjectVariables.MAIN_MENU_FIELD_UTTERANCE,
-			IProjectVariables.MAIN_MENU_FIELD_VALUE };
-		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.MAIN_MENU, variableFields, null, session, false, false );
+		variable = com.avaya.sce.runtime.SimpleVariable.createSimpleVariable(IProjectVariables.MAX_ERROR_CNT, "0", null, session, false, false );
 		session.putVariable(variable);
 
 		variableFields = new String[] {
@@ -262,6 +256,17 @@ public class Start extends com.avaya.sce.runtime.Entry {
 		session.putVariable(variable);
 
 		variableFields = new String[] {
+			IProjectVariables.BUSINESS_QRY_FIELD_CONFIDENCE,
+			IProjectVariables.BUSINESS_QRY_FIELD_INPUTMODE,
+			IProjectVariables.BUSINESS_QRY_FIELD_INTERPRETATION,
+			IProjectVariables.BUSINESS_QRY_FIELD_NOINPUTCOUNT,
+			IProjectVariables.BUSINESS_QRY_FIELD_NOMATCHCOUNT,
+			IProjectVariables.BUSINESS_QRY_FIELD_UTTERANCE,
+			IProjectVariables.BUSINESS_QRY_FIELD_VALUE };
+		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.BUSINESS_QRY, variableFields, null, session, false, false );
+		session.putVariable(variable);
+
+		variableFields = new String[] {
 			IProjectVariables.REPLAY_NOTICE_FIELD_CONFIDENCE,
 			IProjectVariables.REPLAY_NOTICE_FIELD_INPUTMODE,
 			IProjectVariables.REPLAY_NOTICE_FIELD_INTERPRETATION,
@@ -316,6 +321,17 @@ public class Start extends com.avaya.sce.runtime.Entry {
 			IProjectVariables.IVRTOCSR_FIELD_MENUCODE,
 			IProjectVariables.IVRTOCSR_FIELD_UUI };
 		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.IVRTOCSR, variableFields, null, session, false, false );
+		session.putVariable(variable);
+
+		variableFields = new String[] {
+			IProjectVariables.MAIN_MENU_NIGHT_FIELD_CONFIDENCE,
+			IProjectVariables.MAIN_MENU_NIGHT_FIELD_INPUTMODE,
+			IProjectVariables.MAIN_MENU_NIGHT_FIELD_INTERPRETATION,
+			IProjectVariables.MAIN_MENU_NIGHT_FIELD_NOINPUTCOUNT,
+			IProjectVariables.MAIN_MENU_NIGHT_FIELD_NOMATCHCOUNT,
+			IProjectVariables.MAIN_MENU_NIGHT_FIELD_UTTERANCE,
+			IProjectVariables.MAIN_MENU_NIGHT_FIELD_VALUE };
+		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.MAIN_MENU_NIGHT, variableFields, null, session, false, false );
 		session.putVariable(variable);
 	}
 	/**

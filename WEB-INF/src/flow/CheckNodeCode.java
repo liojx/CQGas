@@ -100,7 +100,7 @@ public class CheckNodeCode extends com.avaya.sce.runtime.Data {
 
 			if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition2", "CQValue:vipflag", com.avaya.sce.runtime.Expression.INT_EQUAL, "1", false).setDebugId(774)).evaluate(mySession)) {
 				actions = new java.util.ArrayList(2);
-				actions.add(new com.avaya.sce.runtime.varoperations.Assign("MainMenu:utterance", "9", true).setDebugId(779));
+				actions.add(new com.avaya.sce.runtime.varoperations.Assign("MainMenuDay:utterance", "9", true).setDebugId(779));
 				actions.add(new com.avaya.sce.runtime.Next("ToRenGong", "VIP").setDebugId(776));
 				if(evaluateActions(actions, mySession)) {
 					return true;
@@ -109,7 +109,7 @@ public class CheckNodeCode extends com.avaya.sce.runtime.Data {
 
 			} else {
 				actions = new java.util.ArrayList(1);
-				actions.add(new com.avaya.sce.runtime.Next("Welcome", "主流程").setDebugId(618));
+				actions.add(new com.avaya.sce.runtime.Next("ToRenGong", "主流程").setDebugId(618));
 				if(evaluateActions(actions, mySession)) {
 					return true;
 				}

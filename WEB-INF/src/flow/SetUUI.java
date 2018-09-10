@@ -55,7 +55,7 @@ public class SetUUI extends com.avaya.sce.runtime.BasicServlet {
 		
 		IVariableField uui = mySession.getVariableField(IProjectVariables.IVRTOCSR, IProjectVariables.IVRTOCSR_FIELD_UUI);
 		
-		IVariableField mainMenuField = mySession.getVariableField(IProjectVariables.MAIN_MENU, IProjectVariables.MAIN_MENU_FIELD_UTTERANCE);
+		IVariableField mainMenuField = mySession.getVariableField(IProjectVariables.MAIN_MENU_DAY, IProjectVariables.MAIN_MENU_DAY_FIELD_UTTERANCE);
 		
 		IVariableField callidField = mySession.getVariableField(IProjectVariables.CQVALUE, IProjectVariables.CQVALUE_FIELD_CALLID);
 		IVariableField callTypeField = mySession.getVariableField(IProjectVariables.CQVALUE, IProjectVariables.CQVALUE_FIELD_CALLTYPE);

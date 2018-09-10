@@ -161,7 +161,7 @@
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/el-api.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/annotations-api.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/scertcommon-07.01.08.04.jar"/>
-	<classpathentry kind="lib" path="WEB-INF/lib/avdbop-rt.jar"/>
 	<classpathentry kind="lib" path="WEB-INF/lib/aesclient-07.01.08.04.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/avdbop-rt-07.01.08.04.jar"/>
 	<classpathentry kind="output" path="WEB-INF/classes"/>
 </classpath>

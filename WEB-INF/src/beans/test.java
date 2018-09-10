@@ -1,5 +1,7 @@
 package beans;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import org.apache.commons.lang.StringUtils;
@@ -12,7 +14,18 @@ import com.cqgas.tools.util.TextUtil;
 public class test {
 	public static void main(String args[]){
 		try {
-			AppUtil.getCustomerVO("49040026662");
+			Date date = new Date();
+			SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
+			SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy-MM-dd");
+			SimpleDateFormat sdf3 = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+			String pre = sdf2.format(date);
+				Date dateBegin = sdf3.parse(pre + " 08:30");
+				Date dateEnd = sdf3.parse(pre + " 20:00");
+				System.out.println(dateBegin);
+				System.out.println(dateBegin.after(date));
+				System.out.println(dateEnd.after(date));
+			
+//			AppUtil.getCustomerVO("49040026662");
 			//AppUtil.getJMQF("4902403765","200507");
 			//AppUtil.getDWQF("14100125444", "200905");
 			/*System.out.println(TextUtil.getMoney((new Double("7.2")).doubleValue()));

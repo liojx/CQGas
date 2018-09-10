@@ -87,8 +87,8 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-class>flow.AppRoot</servlet-class>
     </servlet>
     <servlet id="SAGE-callflow-servlet_main_5">
-        <servlet-name>MainMenu</servlet-name>
-        <servlet-class>flow.MainMenu</servlet-class>
+        <servlet-name>MainMenuDay</servlet-name>
+        <servlet-class>flow.MainMenuDay</servlet-class>
     </servlet>
     <servlet id="SAGE-callflow-servlet_main_0">
         <servlet-name>Start</servlet-name>
@@ -232,17 +232,14 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-class>flow.NoAboutInfo</servlet-class>
     </servlet>
     
-    <servlet id="SAGE-callflow-servlet_main_353">
-        <servlet-name>waitblank</servlet-name>
-        <servlet-class>flow.waitblank</servlet-class>
-    </servlet>
+    
     <servlet id="SAGE-callflow-servlet_main_367">
         <servlet-name>checkNotice</servlet-name>
         <servlet-class>flow.checkNotice</servlet-class>
     </servlet>
     <servlet id="SAGE-callflow-servlet_main_391">
-        <servlet-name>ThreeCtsCopy2</servlet-name>
-        <servlet-class>flow.ThreeCtsCopy2</servlet-class>
+        <servlet-name>ErrorOpt1</servlet-name>
+        <servlet-class>flow.ErrorOpt1</servlet-class>
     </servlet>
     <servlet id="SAGE-callflow-servlet_main_415">
         <servlet-name>ThreeCtsCopy3</servlet-name>
@@ -345,6 +342,39 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>Disconnect2</servlet-name>
         <servlet-class>flow.Disconnect2</servlet-class>
     </servlet>
+    <servlet id="SAGE-callflow-servlet_main_806">
+        <servlet-name>JudgeDayOrNight</servlet-name>
+        <servlet-class>flow.JudgeDayOrNight</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_820">
+        <servlet-name>MainMenuNight</servlet-name>
+        <servlet-class>flow.MainMenuNight</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_837">
+        <servlet-name>judgeDayOrNightData</servlet-name>
+        <servlet-class>flow.judgeDayOrNightData</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_859">
+        <servlet-name>useGasCommenSence</servlet-name>
+        <servlet-class>flow.useGasCommenSence</servlet-class>
+    </servlet>
+    
+    <servlet id="SAGE-callflow-servlet_main_868">
+        <servlet-name>businessQry</servlet-name>
+        <servlet-class>flow.businessQry</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_894">
+        <servlet-name>transferOwnshipHits</servlet-name>
+        <servlet-class>flow.transferOwnshipHits</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_900">
+        <servlet-name>applyGasHints</servlet-name>
+        <servlet-class>flow.applyGasHints</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_906">
+        <servlet-name>gasPrice</servlet-name>
+        <servlet-class>flow.gasPrice</servlet-class>
+    </servlet>
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
         <url-pattern>/AvayaDefaultDisconnectHandler</url-pattern>
@@ -370,8 +400,8 @@ Copyright 2004-2011 Avaya Inc.
         <url-pattern>/AppRoot</url-pattern>
     </servlet-mapping>
     <servlet-mapping id="SAGE-callflow-servletmapping_main_5">
-        <servlet-name>MainMenu</servlet-name>
-        <url-pattern>/MainMenu</url-pattern>
+        <servlet-name>MainMenuDay</servlet-name>
+        <url-pattern>/MainMenuDay</url-pattern>
     </servlet-mapping>
     <servlet-mapping id="SAGE-callflow-servletmapping_main_0">
         <servlet-name>Start</servlet-name>
@@ -513,17 +543,14 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>NoAboutInfo</servlet-name>
         <url-pattern>/NoAboutInfo</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_353">
-        <servlet-name>waitblank</servlet-name>
-        <url-pattern>/waitblank</url-pattern>
-    </servlet-mapping>
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_main_367">
         <servlet-name>checkNotice</servlet-name>
         <url-pattern>/checkNotice</url-pattern>
     </servlet-mapping>
     <servlet-mapping id="SAGE-callflow-servletmapping_main_391">
-        <servlet-name>ThreeCtsCopy2</servlet-name>
-        <url-pattern>/ThreeCtsCopy2</url-pattern>
+        <servlet-name>ErrorOpt1</servlet-name>
+        <url-pattern>/ErrorOpt1</url-pattern>
     </servlet-mapping>
     <servlet-mapping id="SAGE-callflow-servletmapping_main_415">
         <servlet-name>ThreeCtsCopy3</servlet-name>
@@ -624,5 +651,37 @@ Copyright 2004-2011 Avaya Inc.
     <servlet-mapping id="SAGE-callflow-servletmapping_main_797">
         <servlet-name>Disconnect2</servlet-name>
         <url-pattern>/Disconnect2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_806">
+        <servlet-name>JudgeDayOrNight</servlet-name>
+        <url-pattern>/JudgeDayOrNight</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_820">
+        <servlet-name>MainMenuNight</servlet-name>
+        <url-pattern>/MainMenuNight</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_837">
+        <servlet-name>judgeDayOrNightData</servlet-name>
+        <url-pattern>/judgeDayOrNightData</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_859">
+        <servlet-name>useGasCommenSence</servlet-name>
+        <url-pattern>/useGasCommenSence</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_868">
+        <servlet-name>businessQry</servlet-name>
+        <url-pattern>/businessQry</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_894">
+        <servlet-name>transferOwnshipHits</servlet-name>
+        <url-pattern>/transferOwnshipHits</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_900">
+        <servlet-name>applyGasHints</servlet-name>
+        <url-pattern>/applyGasHints</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_906">
+        <servlet-name>gasPrice</servlet-name>
+        <url-pattern>/gasPrice</url-pattern>
     </servlet-mapping>
 </web-app>
