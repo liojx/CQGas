@@ -11,8 +11,8 @@
             <ChildItems>
                 <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
-                        <Property name="Phrase" value="gasPrice"/>
-                        <Property name="Phraseset" value="KYGas"/>
+                        <Property name="Phrase" value="transferOwnshipHints"/>
+                        <Property name="Phraseset" value="CQGas"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>

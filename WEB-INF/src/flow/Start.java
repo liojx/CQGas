@@ -256,17 +256,6 @@ public class Start extends com.avaya.sce.runtime.Entry {
 		session.putVariable(variable);
 
 		variableFields = new String[] {
-			IProjectVariables.BUSINESS_QRY_FIELD_CONFIDENCE,
-			IProjectVariables.BUSINESS_QRY_FIELD_INPUTMODE,
-			IProjectVariables.BUSINESS_QRY_FIELD_INTERPRETATION,
-			IProjectVariables.BUSINESS_QRY_FIELD_NOINPUTCOUNT,
-			IProjectVariables.BUSINESS_QRY_FIELD_NOMATCHCOUNT,
-			IProjectVariables.BUSINESS_QRY_FIELD_UTTERANCE,
-			IProjectVariables.BUSINESS_QRY_FIELD_VALUE };
-		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.BUSINESS_QRY, variableFields, null, session, false, false );
-		session.putVariable(variable);
-
-		variableFields = new String[] {
 			IProjectVariables.REPLAY_NOTICE_FIELD_CONFIDENCE,
 			IProjectVariables.REPLAY_NOTICE_FIELD_INPUTMODE,
 			IProjectVariables.REPLAY_NOTICE_FIELD_INTERPRETATION,
@@ -275,6 +264,17 @@ public class Start extends com.avaya.sce.runtime.Entry {
 			IProjectVariables.REPLAY_NOTICE_FIELD_UTTERANCE,
 			IProjectVariables.REPLAY_NOTICE_FIELD_VALUE };
 		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.REPLAY_NOTICE, variableFields, null, session, false, false );
+		session.putVariable(variable);
+
+		variableFields = new String[] {
+			IProjectVariables.REPLAY_NOTICE_COPY_FIELD_CONFIDENCE,
+			IProjectVariables.REPLAY_NOTICE_COPY_FIELD_INPUTMODE,
+			IProjectVariables.REPLAY_NOTICE_COPY_FIELD_INTERPRETATION,
+			IProjectVariables.REPLAY_NOTICE_COPY_FIELD_NOINPUTCOUNT,
+			IProjectVariables.REPLAY_NOTICE_COPY_FIELD_NOMATCHCOUNT,
+			IProjectVariables.REPLAY_NOTICE_COPY_FIELD_UTTERANCE,
+			IProjectVariables.REPLAY_NOTICE_COPY_FIELD_VALUE };
+		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.REPLAY_NOTICE_COPY, variableFields, null, session, false, false );
 		session.putVariable(variable);
 
 		variableFields = new String[] {
@@ -321,6 +321,17 @@ public class Start extends com.avaya.sce.runtime.Entry {
 			IProjectVariables.IVRTOCSR_FIELD_MENUCODE,
 			IProjectVariables.IVRTOCSR_FIELD_UUI };
 		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.IVRTOCSR, variableFields, null, session, false, false );
+		session.putVariable(variable);
+
+		variableFields = new String[] {
+			IProjectVariables.BIZ_MENU_FIELD_CONFIDENCE,
+			IProjectVariables.BIZ_MENU_FIELD_INPUTMODE,
+			IProjectVariables.BIZ_MENU_FIELD_INTERPRETATION,
+			IProjectVariables.BIZ_MENU_FIELD_NOINPUTCOUNT,
+			IProjectVariables.BIZ_MENU_FIELD_NOMATCHCOUNT,
+			IProjectVariables.BIZ_MENU_FIELD_UTTERANCE,
+			IProjectVariables.BIZ_MENU_FIELD_VALUE };
+		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.BIZ_MENU, variableFields, null, session, false, false );
 		session.putVariable(variable);
 
 		variableFields = new String[] {

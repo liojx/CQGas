@@ -12,7 +12,7 @@
                 <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
                         <Property name="Phrase" value="applyGasHints"/>
-                        <Property name="Phraseset" value="KYGas"/>
+                        <Property name="Phraseset" value="CQGas"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>

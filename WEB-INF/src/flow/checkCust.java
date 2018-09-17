@@ -85,7 +85,7 @@ public class checkCust extends com.avaya.sce.runtime.Data {
 
 			if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition2", "CQValue:errorcount3", com.avaya.sce.runtime.Expression.STRING_GREATER_THAN, "2", false).setDebugId(296)).evaluate(mySession)) {
 				actions = new java.util.ArrayList(1);
-				actions.add(new com.avaya.sce.runtime.Next("ErrorCtsLimit", "Default").setDebugId(298));
+				actions.add(new com.avaya.sce.runtime.Next("ErrorCtsLimit", ">=2").setDebugId(298));
 				if(evaluateActions(actions, mySession)) {
 					return true;
 				}
@@ -93,7 +93,7 @@ public class checkCust extends com.avaya.sce.runtime.Data {
 
 			} else {
 				actions = new java.util.ArrayList(1);
-				actions.add(new com.avaya.sce.runtime.Next("ErrorCustNo", "Default").setDebugId(287));
+				actions.add(new com.avaya.sce.runtime.Next("ErrorCustNo", "<2").setDebugId(287));
 				if(evaluateActions(actions, mySession)) {
 					return true;
 				}
@@ -104,7 +104,7 @@ public class checkCust extends com.avaya.sce.runtime.Data {
 		} else {
 			actions = new java.util.ArrayList(2);
 			actions.add(new com.avaya.sce.runtime.varoperations.Assign("CQValue:errorcount", "0", true).setDebugId(430));
-			actions.add(new com.avaya.sce.runtime.Next("CollectMonth", "Default").setDebugId(284));
+			actions.add(new com.avaya.sce.runtime.Next("CollectMonth", "不为空").setDebugId(284));
 			if(evaluateActions(actions, mySession)) {
 				return true;
 			}

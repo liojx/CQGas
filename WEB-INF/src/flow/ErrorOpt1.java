@@ -87,7 +87,7 @@ public class ErrorOpt1 extends com.avaya.sce.runtime.Data {
 
 		} else {
 			actions = new java.util.ArrayList(1);
-			actions.add(new com.avaya.sce.runtime.Next("MainMenuDay", "Default").setDebugId(399));
+			actions.add(new com.avaya.sce.runtime.Next("JudgeDayOrNight", "Default").setDebugId(399));
 			if(evaluateActions(actions, mySession)) {
 				return true;
 			}

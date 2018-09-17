@@ -36,5 +36,7 @@ public class transferOwnshipHints extends com.avaya.sce.runtime.Prompt {
 		setTimeout(1,8000);
 		setBargin(1,true);
 
+		add(1, new com.avaya.sce.runtime.PromptElement(com.avaya.sce.runtime.PromptElement.PHRASESET,"CQGas:transferOwnshipHints",false));
+
 	}
 }

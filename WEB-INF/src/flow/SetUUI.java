@@ -68,10 +68,10 @@ public class SetUUI extends com.avaya.sce.runtime.BasicServlet {
 		map.put("callFlag", "1");
 		uui.setValue(TextUtil.fromatUUIFromMap(map));
 		 logs.debug("转人工uui数据为："+uui.getStringValue());
-		 if("9".equals(mainMenuField.getStringValue())){
-			 csrNumField.setValue("6003");
+		 if("1".equals(mainMenuField.getStringValue())){
+			 csrNumField.setValue("7003");
 		 }else{
-			 csrNumField.setValue("6001");
+			 csrNumField.setValue("7002");
 		 }
 		 
 		 //menuCode=1查询气费  menuCode=2 事故报警  menuCode=3 服务申请  menuCode=4 投诉建议 menuCode=5 公告信息 menuCode=7 安全用气常识  menuCode=0主菜单转的人工

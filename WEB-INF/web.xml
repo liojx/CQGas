@@ -354,15 +354,9 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>judgeDayOrNightData</servlet-name>
         <servlet-class>flow.judgeDayOrNightData</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_859">
-        <servlet-name>useGasCommenSence</servlet-name>
-        <servlet-class>flow.useGasCommenSence</servlet-class>
-    </servlet>
     
-    <servlet id="SAGE-callflow-servlet_main_868">
-        <servlet-name>businessQry</servlet-name>
-        <servlet-class>flow.businessQry</servlet-class>
-    </servlet>
+    
+    
     <servlet id="SAGE-callflow-servlet_main_894">
         <servlet-name>transferOwnshipHits</servlet-name>
         <servlet-class>flow.transferOwnshipHits</servlet-class>
@@ -374,6 +368,28 @@ Copyright 2004-2011 Avaya Inc.
     <servlet id="SAGE-callflow-servlet_main_906">
         <servlet-name>gasPrice</servlet-name>
         <servlet-class>flow.gasPrice</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_924">
+        <servlet-name>print1</servlet-name>
+        <servlet-class>flow.print1</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_928">
+        <servlet-name>print2</servlet-name>
+        <servlet-class>flow.print2</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_934">
+        <servlet-name>useCommonHints</servlet-name>
+        <servlet-class>flow.useCommonHints</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_957">
+        <servlet-name>ReplayNoticeCopy</servlet-name>
+        <servlet-class>flow.ReplayNoticeCopy</servlet-class>
+    </servlet>
+    
+    
+    <servlet id="SAGE-callflow-servlet_main_1007">
+        <servlet-name>BizMenu</servlet-name>
+        <servlet-class>flow.BizMenu</servlet-class>
     </servlet>
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
@@ -664,14 +680,8 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>judgeDayOrNightData</servlet-name>
         <url-pattern>/judgeDayOrNightData</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_859">
-        <servlet-name>useGasCommenSence</servlet-name>
-        <url-pattern>/useGasCommenSence</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_868">
-        <servlet-name>businessQry</servlet-name>
-        <url-pattern>/businessQry</url-pattern>
-    </servlet-mapping>
+    
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_main_894">
         <servlet-name>transferOwnshipHits</servlet-name>
         <url-pattern>/transferOwnshipHits</url-pattern>
@@ -683,5 +693,26 @@ Copyright 2004-2011 Avaya Inc.
     <servlet-mapping id="SAGE-callflow-servletmapping_main_906">
         <servlet-name>gasPrice</servlet-name>
         <url-pattern>/gasPrice</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_924">
+        <servlet-name>print1</servlet-name>
+        <url-pattern>/print1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_928">
+        <servlet-name>print2</servlet-name>
+        <url-pattern>/print2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_934">
+        <servlet-name>useCommonHints</servlet-name>
+        <url-pattern>/useCommonHints</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_957">
+        <servlet-name>ReplayNoticeCopy</servlet-name>
+        <url-pattern>/ReplayNoticeCopy</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1007">
+        <servlet-name>BizMenu</servlet-name>
+        <url-pattern>/BizMenu</url-pattern>
     </servlet-mapping>
 </web-app>

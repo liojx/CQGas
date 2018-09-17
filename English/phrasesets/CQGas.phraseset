@@ -198,4 +198,49 @@
         <comments/>
         <audiofile>0701.wav</audiofile>
     </phrase>
+    <phrase version="1.0">
+        <displayname>commenSense</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>commenSense.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>businessQryMenu</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>businessQryMenu.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>gasPrice</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>gasPrice.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>applyGasHints</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>applyGasHints.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>transferOwnshipHints</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>transferOwnshipHints.wav</audiofile>
+    </phrase>
 </phraseset>

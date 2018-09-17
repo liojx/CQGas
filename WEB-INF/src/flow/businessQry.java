@@ -68,8 +68,10 @@ public class businessQry extends com.avaya.sce.runtime.Menu {
 		java.util.List eventPromptNames = null;
 		String ___tempPromptName = null;
 
-		// Item has no prompts associated
-		eventPromptNames = new java.util.ArrayList();
+		// build the list of prompt names
+		eventPromptNames = new java.util.ArrayList(1);
+		
+		eventPromptNames.add(new com.avaya.sce.runtime.PromptRefInfo("Noinput_003", ""));
 
 		event = new com.avaya.sce.runtime.Event(com.avaya.sce.runtimecommon.SCERT.EVENT_NOINPUT, (com.avaya.sce.runtime.PromptRefInfo[])eventPromptNames.toArray(new com.avaya.sce.runtime.PromptRefInfo[0]), new com.avaya.sce.runtime.Goto("ErrorOpt1", 3, true, "未输入"));
 		list.add(event);
@@ -126,14 +128,14 @@ public class businessQry extends com.avaya.sce.runtime.Menu {
 		grammarInfo = new java.util.ArrayList();
 
 
-		choice = new com.avaya.sce.runtime.Choice("返回上层菜单请按*键", "*", true, "exact", "judgeDayOrNightData", grammarInfo, true);
+		choice = new com.avaya.sce.runtime.Choice("返回上层菜单", "*", true, "exact", "judgeDayOrNightData", grammarInfo, true);
 		list.add(choice);
 
 		// build the list of grammar information objects for the choice
 		grammarInfo = new java.util.ArrayList();
 
 
-		choice = new com.avaya.sce.runtime.Choice("人工服务请按0", "0", true, "exact", "ToRenGong", grammarInfo, true);
+		choice = new com.avaya.sce.runtime.Choice("人工服务", "0", true, "exact", "ToRenGong", grammarInfo, true);
 		list.add(choice);
 
 		return(list);
@@ -153,7 +155,7 @@ public class businessQry extends com.avaya.sce.runtime.Menu {
 		// build the list of prompt names
 		list = new java.util.ArrayList(1);
 		
-		list.add(new com.avaya.sce.runtime.PromptRefInfo("businessQryMenu", ""));
+		list.add(new com.avaya.sce.runtime.PromptRefInfo("commenSense", ""));
 
 		return(list);
 	}

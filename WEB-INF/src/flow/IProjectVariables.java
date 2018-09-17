@@ -48,13 +48,14 @@ public interface IProjectVariables {
 	public static final String CTICALLINFO = "cticallinfo";
 	public static final String COLLECT_MONTH = "CollectMonth";
 	public static final String DD_LAST_EXCEPTION = "ddLastException";
-	public static final String BUSINESS_QRY = "businessQry";
 	public static final String REPLAY_NOTICE = "ReplayNotice";
+	public static final String REPLAY_NOTICE_COPY = "ReplayNoticeCopy";
 	public static final String BUSI_CONS_MENU = "BusiConsMenu";
 	public static final String SATISFY_MENU = "SatisfyMenu";
 	public static final String TRANSFER_AGENT = "transferAgent";
 	public static final String SHAREDUUI = "shareduui";
 	public static final String IVRTOCSR = "IVRTOCSR";
+	public static final String BIZ_MENU = "BizMenu";
 	public static final String MAIN_MENU_NIGHT = "MainMenuNight";
 	//}}END:PROJECT:VARIABLES
 	//{{START:PROJECT:VARIABLEFIELDS
@@ -200,13 +201,6 @@ public interface IProjectVariables {
 	public static final String DD_LAST_EXCEPTION_FIELD_OBJECT = "object";
 	public static final String DD_LAST_EXCEPTION_FIELD_STACKTRACE = "stacktrace";
 	public static final String DD_LAST_EXCEPTION_FIELD_TYPE = "type";
-	public static final String BUSINESS_QRY_FIELD_CONFIDENCE = "confidence";
-	public static final String BUSINESS_QRY_FIELD_INPUTMODE = "inputmode";
-	public static final String BUSINESS_QRY_FIELD_INTERPRETATION = "interpretation";
-	public static final String BUSINESS_QRY_FIELD_NOINPUTCOUNT = "noinputcount";
-	public static final String BUSINESS_QRY_FIELD_NOMATCHCOUNT = "nomatchcount";
-	public static final String BUSINESS_QRY_FIELD_UTTERANCE = "utterance";
-	public static final String BUSINESS_QRY_FIELD_VALUE = "value";
 	public static final String REPLAY_NOTICE_FIELD_CONFIDENCE = "confidence";
 	public static final String REPLAY_NOTICE_FIELD_INPUTMODE = "inputmode";
 	public static final String REPLAY_NOTICE_FIELD_INTERPRETATION = "interpretation";
@@ -214,6 +208,13 @@ public interface IProjectVariables {
 	public static final String REPLAY_NOTICE_FIELD_NOMATCHCOUNT = "nomatchcount";
 	public static final String REPLAY_NOTICE_FIELD_UTTERANCE = "utterance";
 	public static final String REPLAY_NOTICE_FIELD_VALUE = "value";
+	public static final String REPLAY_NOTICE_COPY_FIELD_CONFIDENCE = "confidence";
+	public static final String REPLAY_NOTICE_COPY_FIELD_INPUTMODE = "inputmode";
+	public static final String REPLAY_NOTICE_COPY_FIELD_INTERPRETATION = "interpretation";
+	public static final String REPLAY_NOTICE_COPY_FIELD_NOINPUTCOUNT = "noinputcount";
+	public static final String REPLAY_NOTICE_COPY_FIELD_NOMATCHCOUNT = "nomatchcount";
+	public static final String REPLAY_NOTICE_COPY_FIELD_UTTERANCE = "utterance";
+	public static final String REPLAY_NOTICE_COPY_FIELD_VALUE = "value";
 	public static final String BUSI_CONS_MENU_FIELD_CONFIDENCE = "confidence";
 	public static final String BUSI_CONS_MENU_FIELD_INPUTMODE = "inputmode";
 	public static final String BUSI_CONS_MENU_FIELD_INTERPRETATION = "interpretation";
@@ -240,6 +241,13 @@ public interface IProjectVariables {
 	public static final String IVRTOCSR_FIELD_CSRNUM = "csrnum";
 	public static final String IVRTOCSR_FIELD_MENUCODE = "menucode";
 	public static final String IVRTOCSR_FIELD_UUI = "uui";
+	public static final String BIZ_MENU_FIELD_CONFIDENCE = "confidence";
+	public static final String BIZ_MENU_FIELD_INPUTMODE = "inputmode";
+	public static final String BIZ_MENU_FIELD_INTERPRETATION = "interpretation";
+	public static final String BIZ_MENU_FIELD_NOINPUTCOUNT = "noinputcount";
+	public static final String BIZ_MENU_FIELD_NOMATCHCOUNT = "nomatchcount";
+	public static final String BIZ_MENU_FIELD_UTTERANCE = "utterance";
+	public static final String BIZ_MENU_FIELD_VALUE = "value";
 	public static final String MAIN_MENU_NIGHT_FIELD_CONFIDENCE = "confidence";
 	public static final String MAIN_MENU_NIGHT_FIELD_INPUTMODE = "inputmode";
 	public static final String MAIN_MENU_NIGHT_FIELD_INTERPRETATION = "interpretation";

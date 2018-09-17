@@ -127,8 +127,8 @@ public class GetCallData extends com.avaya.sce.runtime.BasicServlet {
 				callTypeField.setValue(callLogvo.getCallType());
 				logs.debug("初始化的callid====" + callLogvo.getCallId());
 				try {
-					AppUtil.saveCallLog(callLogvo);
-					vipFlagField.setValue(AppUtil.checkVIP(ani.getStringValue()));
+//					AppUtil.saveCallLog(callLogvo);
+//					vipFlagField.setValue(AppUtil.checkVIP(ani.getStringValue()));
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();

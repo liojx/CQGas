@@ -49,8 +49,13 @@ public class MainMenuDay extends com.avaya.sce.runtime.Menu {
 	public java.util.Collection getProperties(com.avaya.sce.runtimecommon.SCESession mySession) {
 		com.avaya.sce.runtime.Property property;
 		java.util.List list;
-		// This item does not have any defined properties
-		list = new java.util.ArrayList();
+		list = new java.util.ArrayList(1);
+
+		property = new com.avaya.sce.runtime.Property("interdigittimeout", "1s");
+		list.add(property);
+
+		property = new com.avaya.sce.runtime.Property("termtimeout", "10s");
+		list.add(property);
 
 		return(list);
 	}
@@ -73,7 +78,7 @@ public class MainMenuDay extends com.avaya.sce.runtime.Menu {
 		
 		eventPromptNames.add(new com.avaya.sce.runtime.PromptRefInfo("Noinput_003", ""));
 
-		event = new com.avaya.sce.runtime.Event(com.avaya.sce.runtimecommon.SCERT.EVENT_NOINPUT, (com.avaya.sce.runtime.PromptRefInfo[])eventPromptNames.toArray(new com.avaya.sce.runtime.PromptRefInfo[0]), new com.avaya.sce.runtime.Goto("ErrorOpt1", 0, true, ""));
+		event = new com.avaya.sce.runtime.Event(com.avaya.sce.runtimecommon.SCERT.EVENT_NOINPUT, (com.avaya.sce.runtime.PromptRefInfo[])eventPromptNames.toArray(new com.avaya.sce.runtime.PromptRefInfo[0]), new com.avaya.sce.runtime.Goto("ErrorCtsLimit", 3, true, ""));
 		list.add(event);
 
 		// build the list of prompt names
@@ -81,7 +86,7 @@ public class MainMenuDay extends com.avaya.sce.runtime.Menu {
 		
 		eventPromptNames.add(new com.avaya.sce.runtime.PromptRefInfo("Nomatch_004", ""));
 
-		event = new com.avaya.sce.runtime.Event(com.avaya.sce.runtimecommon.SCERT.EVENT_NOMATCH, (com.avaya.sce.runtime.PromptRefInfo[])eventPromptNames.toArray(new com.avaya.sce.runtime.PromptRefInfo[0]), new com.avaya.sce.runtime.Goto("ErrorOpt1", 0, true, ""));
+		event = new com.avaya.sce.runtime.Event(com.avaya.sce.runtimecommon.SCERT.EVENT_NOMATCH, (com.avaya.sce.runtime.PromptRefInfo[])eventPromptNames.toArray(new com.avaya.sce.runtime.PromptRefInfo[0]), new com.avaya.sce.runtime.Goto("ErrorCtsLimit", 3, true, ""));
 		list.add(event);
 		event = new com.avaya.sce.runtime.OnDisconnect("End", false);
 		list.add(event);
@@ -121,21 +126,21 @@ public class MainMenuDay extends com.avaya.sce.runtime.Menu {
 		grammarInfo = new java.util.ArrayList();
 
 
-		choice = new com.avaya.sce.runtime.Choice("用气常识", "3", true, "exact", "useGasCommenSence", grammarInfo, true);
+		choice = new com.avaya.sce.runtime.Choice("用气常识", "3", true, "exact", "print1", grammarInfo, true);
 		list.add(choice);
 
 		// build the list of grammar information objects for the choice
 		grammarInfo = new java.util.ArrayList();
 
 
-		choice = new com.avaya.sce.runtime.Choice("故障保修", "4", true, "exact", "ToRenGong", grammarInfo, true);
+		choice = new com.avaya.sce.runtime.Choice("故障报修", "4", true, "exact", "ToRenGong", grammarInfo, true);
 		list.add(choice);
 
 		// build the list of grammar information objects for the choice
 		grammarInfo = new java.util.ArrayList();
 
 
-		choice = new com.avaya.sce.runtime.Choice("业务查询", "5", true, "exact", "businessQry", grammarInfo, true);
+		choice = new com.avaya.sce.runtime.Choice("业务查询", "5", true, "exact", "print2", grammarInfo, true);
 		list.add(choice);
 
 		// build the list of grammar information objects for the choice
@@ -167,8 +172,9 @@ public class MainMenuDay extends com.avaya.sce.runtime.Menu {
 		java.util.List list = null;
 		String ___tempPromptName = null;
 		// build the list of prompt names
-		list = new java.util.ArrayList(1);
+		list = new java.util.ArrayList(2);
 		
+		list.add(new com.avaya.sce.runtime.PromptRefInfo("emergency", ""));
 		list.add(new com.avaya.sce.runtime.PromptRefInfo("MainMenu_001", ""));
 
 		return(list);

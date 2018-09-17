@@ -10,15 +10,6 @@
         <audiofile>commenSense.wav</audiofile>
     </phrase>
     <phrase version="1.0">
-        <displayname>BusinessQryMenuProm</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>BusinessQryMenuProm.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
         <displayname>transferOwnshipHints</displayname>
         <talent/>
         <phrasetext/>
@@ -44,5 +35,41 @@
         <searchkeywords/>
         <comments/>
         <audiofile>gasPrice.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>emergency</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>emergency.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>night_pre</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>night_pre.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>nightMenu</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>nightMenu.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>BusinessQryMenu</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>BusinessQryMenu.wav</audiofile>
     </phrase>
 </phraseset>

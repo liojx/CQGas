@@ -108,7 +108,7 @@ public class transferOwnshipHits extends com.avaya.sce.runtime.Form {
 		// build the list of prompt names
 		list = new java.util.ArrayList(1);
 		
-		list.add(new com.avaya.sce.runtime.PromptRefInfo("transferOwnshipHints", ""));
+		list.add(new com.avaya.sce.runtime.PromptRefInfo("transferOwnshipHints", "English"));
 
 		return(list);
 	}
@@ -121,7 +121,7 @@ public class transferOwnshipHits extends com.avaya.sce.runtime.Form {
 	 */
 	public com.avaya.sce.runtime.Submit getSubmit(com.avaya.sce.runtimecommon.SCESession mySession) {
 		com.avaya.sce.runtime.Submit submit = null;
-		submit = new com.avaya.sce.runtime.Submit("judgeDayOrNightData");
+		submit = new com.avaya.sce.runtime.Submit("ReplayNoticeCopy");
 		return submit;
 	}
 	/**
