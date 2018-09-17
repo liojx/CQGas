@@ -79,6 +79,7 @@ public class TScust extends com.avaya.sce.runtime.BasicServlet {
 				}
 				logs.debug(sb.toString());
 				feeField.setValue(sb.toString());
+				System.out.println("气费查询："+sb.toString());
 			}
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

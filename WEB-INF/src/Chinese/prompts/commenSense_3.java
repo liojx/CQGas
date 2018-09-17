@@ -3,15 +3,15 @@
  */
 package Chinese.prompts;
 
-public class night_pre extends com.avaya.sce.runtime.Prompt {
+public class commenSense_3 extends com.avaya.sce.runtime.Prompt {
 
 	//{{START:CLASS:FIELDS
 	//}}END:CLASS:FIELDS
 
 	/**
-	 * Constructor for night_pre.
+	 * Constructor for commenSense_3.
 	 */
-	public night_pre() {
+	public commenSense_3() {
 		//{{START:CLASS:CONSTRUCTOR
 		super();
 		//}}END:CLASS:CONSTRUCTOR
@@ -29,14 +29,12 @@ public class night_pre extends com.avaya.sce.runtime.Prompt {
 		com.avaya.sce.runtime.RenderHint hint = null;
 		com.avaya.sce.runtime.MediaPage mediaPage = null;
 		setBarginType(com.avaya.sce.runtimecommon.SCERT.BARGIN_SPEECH);
-		setName("night_pre");
+		setName("commenSense_3");
 		setOrder(com.avaya.sce.runtime.Prompt.STANDARD);
 
 		// Prompt level 1
 		setTimeout(1,8000);
 		setBargin(1,true);
-
-		add(1, new com.avaya.sce.runtime.PromptElement(com.avaya.sce.runtime.PromptElement.PHRASESET,"CQGas:night_pre",false));
 
 	}
 }

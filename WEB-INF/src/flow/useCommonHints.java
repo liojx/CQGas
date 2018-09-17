@@ -121,7 +121,7 @@ public class useCommonHints extends com.avaya.sce.runtime.Form {
 	 */
 	public com.avaya.sce.runtime.Submit getSubmit(com.avaya.sce.runtimecommon.SCESession mySession) {
 		com.avaya.sce.runtime.Submit submit = null;
-		submit = new com.avaya.sce.runtime.Submit("judgeDayOrNightData");
+		submit = new com.avaya.sce.runtime.Submit("ReplayNoticeCopyCopy");
 		return submit;
 	}
 	/**

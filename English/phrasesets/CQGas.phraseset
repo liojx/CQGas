@@ -243,4 +243,31 @@
         <comments/>
         <audiofile>transferOwnshipHints.wav</audiofile>
     </phrase>
+    <phrase version="1.0">
+        <displayname>commenSense_1</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>commenSense_1.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>commenSense_2</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>commenSense_2.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>commenSense_3</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>commenSense_3.wav</audiofile>
+    </phrase>
 </phraseset>

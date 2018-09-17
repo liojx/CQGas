@@ -377,10 +377,7 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>print2</servlet-name>
         <servlet-class>flow.print2</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_934">
-        <servlet-name>useCommonHints</servlet-name>
-        <servlet-class>flow.useCommonHints</servlet-class>
-    </servlet>
+    
     <servlet id="SAGE-callflow-servlet_main_957">
         <servlet-name>ReplayNoticeCopy</servlet-name>
         <servlet-class>flow.ReplayNoticeCopy</servlet-class>
@@ -392,6 +389,28 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-class>flow.BizMenu</servlet-class>
     </servlet>
     
+    
+    <servlet id="SAGE-callflow-servlet_main_1052">
+        <servlet-name>judgeBtn</servlet-name>
+        <servlet-class>flow.judgeBtn</servlet-class>
+    </servlet>
+    
+    <servlet id="SAGE-callflow-servlet_main_1078">
+        <servlet-name>ReplayNoticeCopyCopy</servlet-name>
+        <servlet-class>flow.ReplayNoticeCopyCopy</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1113">
+        <servlet-name>commenSense_3</servlet-name>
+        <servlet-class>flow.commenSense_3</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1109">
+        <servlet-name>commenSense_2</servlet-name>
+        <servlet-class>flow.commenSense_2</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1104">
+        <servlet-name>commenSense_1</servlet-name>
+        <servlet-class>flow.commenSense_1</servlet-class>
+    </servlet>
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
         <url-pattern>/AvayaDefaultDisconnectHandler</url-pattern>
@@ -703,10 +722,7 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>print2</servlet-name>
         <url-pattern>/print2</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_934">
-        <servlet-name>useCommonHints</servlet-name>
-        <url-pattern>/useCommonHints</url-pattern>
-    </servlet-mapping>
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_main_957">
         <servlet-name>ReplayNoticeCopy</servlet-name>
         <url-pattern>/ReplayNoticeCopy</url-pattern>
@@ -716,5 +732,27 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>BizMenu</servlet-name>
         <url-pattern>/BizMenu</url-pattern>
     </servlet-mapping>
+    
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1052">
+        <servlet-name>judgeBtn</servlet-name>
+        <url-pattern>/judgeBtn</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1078">
+        <servlet-name>ReplayNoticeCopyCopy</servlet-name>
+        <url-pattern>/ReplayNoticeCopyCopy</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1113">
+        <servlet-name>commenSense_3</servlet-name>
+        <url-pattern>/commenSense_3</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1109">
+        <servlet-name>commenSense_2</servlet-name>
+        <url-pattern>/commenSense_2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1104">
+        <servlet-name>commenSense_1</servlet-name>
+        <url-pattern>/commenSense_1</url-pattern>
+    </servlet-mapping>
+    
     
 </web-app>

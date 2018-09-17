@@ -49,13 +49,8 @@ public class ReplayNoticeCopy extends com.avaya.sce.runtime.Menu {
 	public java.util.Collection getProperties(com.avaya.sce.runtimecommon.SCESession mySession) {
 		com.avaya.sce.runtime.Property property;
 		java.util.List list;
-		list = new java.util.ArrayList(1);
-
-		property = new com.avaya.sce.runtime.Property("interdigittimeout", "5s");
-		list.add(property);
-
-		property = new com.avaya.sce.runtime.Property("termtimeout", "10s");
-		list.add(property);
+		// This item does not have any defined properties
+		list = new java.util.ArrayList();
 
 		return(list);
 	}
@@ -112,7 +107,7 @@ public class ReplayNoticeCopy extends com.avaya.sce.runtime.Menu {
 		grammarInfo = new java.util.ArrayList();
 
 
-		choice = new com.avaya.sce.runtime.Choice("重听", "1", true, "exact", "BizMenu", grammarInfo, true);
+		choice = new com.avaya.sce.runtime.Choice("重听", "1", true, "exact", "judgeBtn", grammarInfo, true);
 		list.add(choice);
 
 		// build the list of grammar information objects for the choice

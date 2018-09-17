@@ -20,7 +20,7 @@ public class CQGas extends com.avaya.sce.runtime.Phraseset {
 		//{{START:PHRASESET:STATIC
 
 		// Create the phrase map, then populate with phrases
-		PHRASE_MAP = new com.avaya.sce.runtime.Phraseset.PhraseMap(54);
+		PHRASE_MAP = new com.avaya.sce.runtime.Phraseset.PhraseMap(62);
 		com.avaya.sce.runtime.Phrase phrase;
 
 		// phrase: Noinput_003
@@ -103,6 +103,18 @@ public class CQGas extends com.avaya.sce.runtime.Phraseset {
 
 		// phrase: emergency
 		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "emergency", "emergency.wav", ""); 
+
+		// phrase: nightMenu
+		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "nightMenu", "nightMenu.wav", ""); 
+
+		// phrase: night_pre
+		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "night_pre", "night_pre.wav", ""); 
+
+		// phrase: commenSense_1
+		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "commenSense_1", "commenSense_1.wav", ""); 
+
+		// phrase: commenSense_2
+		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "commenSense_2", "commenSense_2.wav", ""); 
 
 		//}}END:PHRASESET:STATIC
 	}

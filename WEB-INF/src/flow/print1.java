@@ -69,7 +69,7 @@ public class print1 extends com.avaya.sce.runtime.BasicServlet {
 		com.avaya.sce.runtime.Goto aGoto = null;
 		list = new java.util.ArrayList(1);
 
-		aGoto = new com.avaya.sce.runtime.Goto("useCommonHints", 0, true, "Default");
+		aGoto = new com.avaya.sce.runtime.Goto("commenSense_1", 0, true, "Default");
 		list.add(aGoto);
 
 		return list;

@@ -43,6 +43,7 @@ public interface IProjectVariables {
 	public static final String NOTICE_MENU = "NoticeMenu";
 	public static final String REPLAY_SAFE = "ReplaySafe";
 	public static final String REPLAY_FEE_INFO = "ReplayFeeInfo";
+	public static final String REPLAY_NOTICE_COPY_COPY = "ReplayNoticeCopyCopy";
 	public static final String MAX_ERROR_CNT = "maxErrorCnt";
 	public static final String CQVALUE = "CQValue";
 	public static final String CTICALLINFO = "cticallinfo";
@@ -158,6 +159,13 @@ public interface IProjectVariables {
 	public static final String REPLAY_FEE_INFO_FIELD_NOMATCHCOUNT = "nomatchcount";
 	public static final String REPLAY_FEE_INFO_FIELD_UTTERANCE = "utterance";
 	public static final String REPLAY_FEE_INFO_FIELD_VALUE = "value";
+	public static final String REPLAY_NOTICE_COPY_COPY_FIELD_CONFIDENCE = "confidence";
+	public static final String REPLAY_NOTICE_COPY_COPY_FIELD_INPUTMODE = "inputmode";
+	public static final String REPLAY_NOTICE_COPY_COPY_FIELD_INTERPRETATION = "interpretation";
+	public static final String REPLAY_NOTICE_COPY_COPY_FIELD_NOINPUTCOUNT = "noinputcount";
+	public static final String REPLAY_NOTICE_COPY_COPY_FIELD_NOMATCHCOUNT = "nomatchcount";
+	public static final String REPLAY_NOTICE_COPY_COPY_FIELD_UTTERANCE = "utterance";
+	public static final String REPLAY_NOTICE_COPY_COPY_FIELD_VALUE = "value";
 	public static final String CQVALUE_FIELD_AGENTID = "agentid";
 	public static final String CQVALUE_FIELD_CALLID = "callid";
 	public static final String CQVALUE_FIELD_CALLTYPE = "calltype";

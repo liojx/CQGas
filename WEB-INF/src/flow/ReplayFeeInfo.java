@@ -121,7 +121,7 @@ public class ReplayFeeInfo extends com.avaya.sce.runtime.Menu {
 		grammarInfo = new java.util.ArrayList();
 
 
-		choice = new com.avaya.sce.runtime.Choice("返回上级菜单", "*", true, "exact", "InitBack", grammarInfo, true);
+		choice = new com.avaya.sce.runtime.Choice("返回上级菜单", "*", true, "exact", "JudgeDayOrNight", grammarInfo, true);
 		list.add(choice);
 
 		return(list);

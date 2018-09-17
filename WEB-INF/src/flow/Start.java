@@ -192,6 +192,17 @@ public class Start extends com.avaya.sce.runtime.Entry {
 		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.REPLAY_FEE_INFO, variableFields, null, session, false, false );
 		session.putVariable(variable);
 
+		variableFields = new String[] {
+			IProjectVariables.REPLAY_NOTICE_COPY_COPY_FIELD_CONFIDENCE,
+			IProjectVariables.REPLAY_NOTICE_COPY_COPY_FIELD_INPUTMODE,
+			IProjectVariables.REPLAY_NOTICE_COPY_COPY_FIELD_INTERPRETATION,
+			IProjectVariables.REPLAY_NOTICE_COPY_COPY_FIELD_NOINPUTCOUNT,
+			IProjectVariables.REPLAY_NOTICE_COPY_COPY_FIELD_NOMATCHCOUNT,
+			IProjectVariables.REPLAY_NOTICE_COPY_COPY_FIELD_UTTERANCE,
+			IProjectVariables.REPLAY_NOTICE_COPY_COPY_FIELD_VALUE };
+		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.REPLAY_NOTICE_COPY_COPY, variableFields, null, session, false, false );
+		session.putVariable(variable);
+
 		variable = com.avaya.sce.runtime.SimpleVariable.createSimpleVariable(IProjectVariables.MAX_ERROR_CNT, "0", null, session, false, false );
 		session.putVariable(variable);
 
