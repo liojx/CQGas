@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre7"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.7.0_75"/>
 	<classpathentry kind="src" path="WEB-INF/src"/>
 	<classpathentry kind="lib" path="WEB-INF/lib/zh-cn.jar"/>
 	<classpathentry kind="lib" path="WEB-INF/lib/asm-3.2.jar"/>
@@ -161,7 +161,9 @@
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/el-api.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/annotations-api.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/scertcommon-07.01.08.04.jar"/>
-	<classpathentry kind="lib" path="WEB-INF/lib/aesclient-07.01.08.04.jar"/>
 	<classpathentry kind="lib" path="WEB-INF/lib/avdbop-rt-07.01.08.04.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME"/>
+	<classpathentry kind="lib" path="C:/IVR/AAOD7.0.1/apache-tomcat-7.0.55/lib/scertcommon-07.01.08.04.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/aesclient-07.01.08.04.jar"/>
 	<classpathentry kind="output" path="WEB-INF/classes"/>
 </classpath>

@@ -49,13 +49,8 @@ public class MainMenuDay extends com.avaya.sce.runtime.Menu {
 	public java.util.Collection getProperties(com.avaya.sce.runtimecommon.SCESession mySession) {
 		com.avaya.sce.runtime.Property property;
 		java.util.List list;
-		list = new java.util.ArrayList(1);
-
-		property = new com.avaya.sce.runtime.Property("interdigittimeout", "1s");
-		list.add(property);
-
-		property = new com.avaya.sce.runtime.Property("termtimeout", "10s");
-		list.add(property);
+		// This item does not have any defined properties
+		list = new java.util.ArrayList();
 
 		return(list);
 	}

@@ -1,5 +1,6 @@
 package beans;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -14,16 +15,25 @@ import com.cqgas.tools.util.TextUtil;
 public class test {
 	public static void main(String args[]){
 		try {
-			Date date = new Date();
-			SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
-			SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy-MM-dd");
-			SimpleDateFormat sdf3 = new SimpleDateFormat("yyyy-MM-dd HH:mm");
-			String pre = sdf2.format(date);
-				Date dateBegin = sdf3.parse(pre + " 08:30");
-				Date dateEnd = sdf3.parse(pre + " 20:00");
-				System.out.println(dateBegin);
-				System.out.println(dateBegin.after(date));
-				System.out.println(dateEnd.after(date));
+				Date date = new Date();
+				SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
+				SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy-MM-dd");
+				SimpleDateFormat sdf3 = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+				String pre = sdf2.format(date);
+				String dayOrNight = "";
+				try {
+					Date dateBegin = sdf3.parse(pre + " 08:30");
+					Date dateEnd = sdf3.parse(pre + " 20:00");
+					if(date.after(dateBegin) && date.before(dateEnd)){
+						dayOrNight = "d";
+					}else{
+						dayOrNight = "n";
+					}
+					System.out.println("当前dayOrNight标志：" + dayOrNight);
+				} catch (ParseException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 			
 //			AppUtil.getCustomerVO("49040026662");
 			//AppUtil.getJMQF("4902403765","200507");
