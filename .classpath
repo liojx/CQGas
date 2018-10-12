@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre7"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.7.0_75"/>
 	<classpathentry kind="src" path="WEB-INF/src"/>
 	<classpathentry kind="lib" path="WEB-INF/lib/zh-cn.jar"/>
 	<classpathentry kind="lib" path="WEB-INF/lib/asm-3.2.jar"/>
@@ -154,7 +154,6 @@
 	<classpathentry kind="lib" path="WEB-INF/lib/wsdl4j-1.6.3.jar"/>
 	<classpathentry kind="lib" path="WEB-INF/lib/xml-resolver-1.2.jar"/>
 	<classpathentry kind="lib" path="WEB-INF/lib/xmlschema-core-2.1.0.jar"/>
-	<classpathentry kind="lib" path="WEB-INF/lib/scert-07.01.08.04.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/servlet-api.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/jasper.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/jsp-api.jar"/>
@@ -164,5 +163,6 @@
 	<classpathentry kind="lib" path="WEB-INF/lib/avdbop-rt-07.01.08.04.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME"/>
 	<classpathentry kind="lib" path="WEB-INF/lib/aesclient-07.01.08.04.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/scert-07.01.08.04.jar"/>
 	<classpathentry kind="output" path="WEB-INF/classes"/>
 </classpath>

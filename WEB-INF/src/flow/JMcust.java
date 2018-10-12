@@ -71,14 +71,24 @@ public class JMcust extends com.avaya.sce.runtime.BasicServlet {
 					
 					//feeField.setValue("您查询的结果如下：上月指数:"+vo.getCbjl_scbd()+",本月指数："+vo.getCbjl_bcbd()+", 用气量:"+vo.getCbjl_bcyql_js()+",用气费:"+vo.getCbjl_yje()+","+("7".equals(vo.getCbjl_zt())? "已缴费":"未缴费"));
 				 //sb.append(DateUtil.getPromptDate(((java.util.Map)(list.get(i))).get("tsrq").toString()));
-				 sb.append("上月指数,,"+((java.util.Map)(list.get(i))).get("cbjl_scbd"));
-				 sb.append(",,本月指数,,"+((java.util.Map)(list.get(i))).get("cbjl_bcbd"));
-				 sb.append(",,用气量,,"+((java.util.Map)(list.get(i))).get("cbjl_bcyql_js"));
-				 String money  = ((java.util.Map)(list.get(i))).get("cbjl_yje").toString();
-				 sb.append(",,用气费,,"+TextUtil.getMoney(new Double(money)));
-				 String status = ((java.util.Map)(list.get(i))).get("cbjl_zt").toString();
-				 sb.append(",,"+("7".equals(status)? "已缴费,,":"未缴费,,"));
+				 String xiangmu = String.valueOf(((java.util.Map)(list.get(i))).get("xiangmu"));
+				 String laji = "垃圾处理费";
+				 if(xiangmu != null && laji.equals(xiangmu.trim())){
+					 String money  = ((java.util.Map)(list.get(i))).get("cbjl_yje").toString();
+					 sb.append(",,垃圾处理费,,"+TextUtil.getMoney(new Double(money)));
+					 String status = ((java.util.Map)(list.get(i))).get("cbjl_zt").toString();
+					 sb.append(",,"+("7".equals(status)? "已缴费,,":"未缴费,,"));
+				 }else{
+					 sb.append("上月指数,,"+((java.util.Map)(list.get(i))).get("cbjl_scbd"));
+					 sb.append(",,本月指数,,"+((java.util.Map)(list.get(i))).get("cbjl_bcbd"));
+					 sb.append(",,用气量,,"+((java.util.Map)(list.get(i))).get("cbjl_bcyql_js"));
+					 String money  = ((java.util.Map)(list.get(i))).get("cbjl_yje").toString();
+					 sb.append(",,用气费,,"+TextUtil.getMoney(new Double(money)));
+					 String status = ((java.util.Map)(list.get(i))).get("cbjl_zt").toString();
+					 sb.append(",,"+("7".equals(status)? "已缴费,,":"未缴费,,"));
 					//sb.append();
+				 }
+				
 				}
 				feeField.setValue(sb.toString());
 				System.out.println("气费查询："+sb.toString());

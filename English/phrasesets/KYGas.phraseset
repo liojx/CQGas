@@ -72,4 +72,22 @@
         <comments/>
         <audiofile>BusinessQryMenu.wav</audiofile>
     </phrase>
+    <phrase version="1.0">
+        <displayname>dayHints</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>dayHints.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>stopGas</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>stopGas.wav</audiofile>
+    </phrase>
 </phraseset>

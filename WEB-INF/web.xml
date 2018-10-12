@@ -399,14 +399,8 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>ReplayNoticeCopyCopy</servlet-name>
         <servlet-class>flow.ReplayNoticeCopyCopy</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_1113">
-        <servlet-name>commenSense_3</servlet-name>
-        <servlet-class>flow.commenSense_3</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_1109">
-        <servlet-name>commenSense_2</servlet-name>
-        <servlet-class>flow.commenSense_2</servlet-class>
-    </servlet>
+    
+    
     <servlet id="SAGE-callflow-servlet_main_1104">
         <servlet-name>commenSense_1</servlet-name>
         <servlet-class>flow.commenSense_1</servlet-class>
@@ -741,14 +735,8 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>ReplayNoticeCopyCopy</servlet-name>
         <url-pattern>/ReplayNoticeCopyCopy</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_1113">
-        <servlet-name>commenSense_3</servlet-name>
-        <url-pattern>/commenSense_3</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_1109">
-        <servlet-name>commenSense_2</servlet-name>
-        <url-pattern>/commenSense_2</url-pattern>
-    </servlet-mapping>
+    
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_main_1104">
         <servlet-name>commenSense_1</servlet-name>
         <url-pattern>/commenSense_1</url-pattern>

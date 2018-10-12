@@ -116,7 +116,7 @@ public class checkCustType extends com.avaya.sce.runtime.Data {
 
 			} else if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition4", "CQValue:custtype", com.avaya.sce.runtime.Expression.STRING_EQUAL, "1", false).setDebugId(108)).evaluate(mySession)) {
 				actions = new java.util.ArrayList(1);
-				actions.add(new com.avaya.sce.runtime.Next("DWcust", "单位").setDebugId(110));
+				actions.add(new com.avaya.sce.runtime.Next("JMcust", "单位").setDebugId(110));
 				if(evaluateActions(actions, mySession)) {
 					return true;
 				}

@@ -20,7 +20,7 @@ public class KYGas extends com.avaya.sce.runtime.Phraseset {
 		//{{START:PHRASESET:STATIC
 
 		// Create the phrase map, then populate with phrases
-		PHRASE_MAP = new com.avaya.sce.runtime.Phraseset.PhraseMap(16);
+		PHRASE_MAP = new com.avaya.sce.runtime.Phraseset.PhraseMap(20);
 		com.avaya.sce.runtime.Phrase phrase;
 
 		// phrase: commenSense
@@ -46,6 +46,12 @@ public class KYGas extends com.avaya.sce.runtime.Phraseset {
 
 		// phrase: BusinessQryMenu
 		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "BusinessQryMenu", "BusinessQryMenu.wav", ""); 
+
+		// phrase: dayHints
+		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "dayHints", "dayHints.wav", ""); 
+
+		// phrase: stopGas
+		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "stopGas", "stopGas.wav", ""); 
 
 		//}}END:PHRASESET:STATIC
 	}

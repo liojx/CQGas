@@ -167,9 +167,11 @@ public class MainMenuDay extends com.avaya.sce.runtime.Menu {
 		java.util.List list = null;
 		String ___tempPromptName = null;
 		// build the list of prompt names
-		list = new java.util.ArrayList(2);
+		list = new java.util.ArrayList(4);
 		
 		list.add(new com.avaya.sce.runtime.PromptRefInfo("emergency", ""));
+		list.add(new com.avaya.sce.runtime.PromptRefInfo("dayHints", ""));
+		list.add(new com.avaya.sce.runtime.PromptRefInfo("stopGas", ""));
 		list.add(new com.avaya.sce.runtime.PromptRefInfo("MainMenu_001", ""));
 
 		return(list);
