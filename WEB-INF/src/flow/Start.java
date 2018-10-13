@@ -51,6 +51,18 @@ public class Start extends com.avaya.sce.runtime.Entry {
 		session.putVariable(variable);
 
 		variableFields = new String[] {
+			IProjectVariables.E_INPUT_FIELD_COLUMN_0,
+			IProjectVariables.E_INPUT_FIELD_CONFIDENCE,
+			IProjectVariables.E_INPUT_FIELD_INPUTMODE,
+			IProjectVariables.E_INPUT_FIELD_INTERPRETATION,
+			IProjectVariables.E_INPUT_FIELD_NOINPUTCOUNT,
+			IProjectVariables.E_INPUT_FIELD_NOMATCHCOUNT,
+			IProjectVariables.E_INPUT_FIELD_UTTERANCE,
+			IProjectVariables.E_INPUT_FIELD_VALUE };
+		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.E_INPUT, variableFields, null, session, false, false );
+		session.putVariable(variable);
+
+		variableFields = new String[] {
 			IProjectVariables.TIME_FIELD_AUDIO,
 			IProjectVariables.TIME_FIELD_HOUR,
 			IProjectVariables.TIME_FIELD_MILLISECOND,
@@ -203,6 +215,9 @@ public class Start extends com.avaya.sce.runtime.Entry {
 		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.REPLAY_NOTICE_COPY_COPY, variableFields, null, session, false, false );
 		session.putVariable(variable);
 
+		variable = com.avaya.sce.runtime.SimpleVariable.createSimpleVariable(IProjectVariables.IS_EXIST, "", null, session, false, false );
+		session.putVariable(variable);
+
 		variable = com.avaya.sce.runtime.SimpleVariable.createSimpleVariable(IProjectVariables.MAX_ERROR_CNT, "0", null, session, false, false );
 		session.putVariable(variable);
 
@@ -246,6 +261,9 @@ public class Start extends com.avaya.sce.runtime.Entry {
 		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.CTICALLINFO, variableFields, null, session, false, true );
 		session.putVariable(variable);
 
+		variable = com.avaya.sce.runtime.SimpleVariable.createSimpleVariable(IProjectVariables.KEY, "", null, session, false, false );
+		session.putVariable(variable);
+
 		variableFields = new String[] {
 			IProjectVariables.COLLECT_MONTH_FIELD_CONFIDENCE,
 			IProjectVariables.COLLECT_MONTH_FIELD_INPUTMODE,
@@ -264,6 +282,17 @@ public class Start extends com.avaya.sce.runtime.Entry {
 			IProjectVariables.DD_LAST_EXCEPTION_FIELD_STACKTRACE,
 			IProjectVariables.DD_LAST_EXCEPTION_FIELD_TYPE };
 		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.DD_LAST_EXCEPTION, variableFields, null, session, false, false );
+		session.putVariable(variable);
+
+		variableFields = new String[] {
+			IProjectVariables.EMERG_FIELD_CONFIDENCE,
+			IProjectVariables.EMERG_FIELD_INPUTMODE,
+			IProjectVariables.EMERG_FIELD_INTERPRETATION,
+			IProjectVariables.EMERG_FIELD_NOINPUTCOUNT,
+			IProjectVariables.EMERG_FIELD_NOMATCHCOUNT,
+			IProjectVariables.EMERG_FIELD_UTTERANCE,
+			IProjectVariables.EMERG_FIELD_VALUE };
+		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.EMERG, variableFields, null, session, false, false );
 		session.putVariable(variable);
 
 		variableFields = new String[] {

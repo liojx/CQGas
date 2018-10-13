@@ -302,4 +302,13 @@ public class DateUtil {
  	   }
  	   return ""+y+"年"+m+"月"+d+"日";
     }
+    public static String getPromptDate2(String str_date){
+    	String  strYmd = "" + str_date;
+ 	   String y = strYmd.substring(0,4);
+ 	  String m = strYmd.substring(4,6);
+ 	   if(m.startsWith("0")){
+ 		   m = m.substring(1);
+ 		 }
+ 	   return ""+y+"年"+m+"月";
+    }
 }

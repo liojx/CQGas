@@ -53,6 +53,7 @@ public class JMcust extends com.avaya.sce.runtime.BasicServlet {
 
 		// TODO: Add your code here!
 		IVariableField feeField = mySession.getVariableField(IProjectVariables.CQVALUE, IProjectVariables.CQVALUE_FIELD_FEERESULT);
+		feeField.setValue(""); //清除上一条查询出的内容
 		//feeField.setValue("居民气费查询结果如下：2016年5月，费用合计180.00元，2016年6月，费用合计200.00元");
 		IVariableField monthField = mySession.getVariableField(IProjectVariables.COLLECT_MONTH, IProjectVariables.COLLECT_MONTH_FIELD_UTTERANCE);
 		

@@ -63,7 +63,7 @@ public class JudgeDayOrNight extends com.avaya.sce.runtime.BasicServlet {
 				dayOrNight = "n";
 			}
 			mySession.getVariable("dayOrNight").getSimpleVariable().setValue(dayOrNight);
-			System.out.println("当前dayOrNight标志：" + dayOrNight);
+			System.out.println("当前dayOrNight_2标志：" + dayOrNight);
 		} catch (ParseException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -100,15 +100,8 @@ public class MainMenuNight extends com.avaya.sce.runtime.Menu {
 		java.util.List list = null;
 		com.avaya.sce.runtime.Choice choice = null;
 		java.util.Collection grammarInfo = null;
-		list = new java.util.ArrayList(4);
+		list = new java.util.ArrayList(3);
 		String ___tempGrammarName = null;
-
-		// build the list of grammar information objects for the choice
-		grammarInfo = new java.util.ArrayList();
-
-
-		choice = new com.avaya.sce.runtime.Choice("紧急抢险", "1", true, "exact", "ToRenGong", grammarInfo, true);
-		list.add(choice);
 
 		// build the list of grammar information objects for the choice
 		grammarInfo = new java.util.ArrayList();
@@ -146,10 +139,8 @@ public class MainMenuNight extends com.avaya.sce.runtime.Menu {
 		java.util.List list = null;
 		String ___tempPromptName = null;
 		// build the list of prompt names
-		list = new java.util.ArrayList(3);
+		list = new java.util.ArrayList(1);
 		
-		list.add(new com.avaya.sce.runtime.PromptRefInfo("night_pre", ""));
-		list.add(new com.avaya.sce.runtime.PromptRefInfo("emergency", ""));
 		list.add(new com.avaya.sce.runtime.PromptRefInfo("nightMenu", ""));
 
 		return(list);

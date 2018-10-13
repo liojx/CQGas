@@ -67,7 +67,7 @@ public class TScust extends com.avaya.sce.runtime.BasicServlet {
 				for(int i =0 ;i<list.size();i++){
 					
 					//feeField.setValue("您查询的结果如下：上月指数:"+vo.getCbjl_scbd()+",本月指数："+vo.getCbjl_bcbd()+", 用气量:"+vo.getCbjl_bcyql_js()+",用气费:"+vo.getCbjl_yje()+","+("7".equals(vo.getCbjl_zt())? "已缴费":"未缴费"));
-				 sb.append(DateUtil.getPromptDate(((java.util.Map)(list.get(i))).get("tsrq").toString()));
+				 sb.append(DateUtil.getPromptDate2(((java.util.Map)(list.get(i))).get("tsrq").toString()));
 				 //sb.append("上月指数："+((java.util.Map)(list.get(i))).get("cbjl_scbd"));
 				
 				// sb.append("用气量："+((java.util.Map)(list.get(i))).get("cbjl_bcyql_js"));
