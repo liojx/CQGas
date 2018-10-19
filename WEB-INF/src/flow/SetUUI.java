@@ -4,12 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.apache.log4j.Logger;
-import org.springframework.dao.EmptyResultDataAccessException;
 
-import beans.CustomerVO;
 
 import com.avaya.sce.runtimecommon.IVariableField;
-import com.cqgas.tools.util.AppUtil;
 import com.cqgas.tools.util.TextUtil;
 
 /**

@@ -211,12 +211,12 @@ public class TextUtil {
 			String[] arrys = uui.split("\\|");
 			Map<String,String> map = new HashMap<String,String>();
 			for(int i=0;i<arrys.length;i++){
-				if(arrys[i].indexOf("~")>-1){
-					String[] as = arrys[i].split("~");
+				if(arrys[i].indexOf("=")>-1){
+					String[] as = arrys[i].split("=");
 					if(as.length==2){
-						map.put(arrys[i].split("~")[0].trim(), arrys[i].split("~")[1].trim());
+						map.put(arrys[i].split("=")[0].trim(), arrys[i].split("=")[1].trim());
 					}else{
-						map.put(arrys[i].split("~")[0].trim(), "");
+						map.put(arrys[i].split("=")[0].trim(), "");
 					}
 				}
 			}
@@ -230,9 +230,9 @@ public class TextUtil {
 		String newUUI="";
 		for (String key : map.keySet()) {
 			if(i==0){
-				newUUI= newUUI+key+"~"+ map.get(key);
+				newUUI= newUUI+key+"="+ map.get(key);
 			}else{
-				newUUI = newUUI+"|"+key+"~"+ map.get(key);
+				newUUI = newUUI+"|"+key+"="+ map.get(key);
 			}
 			i++;
 		 }

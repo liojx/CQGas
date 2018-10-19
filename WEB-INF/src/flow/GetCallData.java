@@ -54,7 +54,6 @@ public class GetCallData extends com.avaya.sce.runtime.BasicServlet {
 	 */
 	public void servletImplementation(com.avaya.sce.runtimecommon.SCESession mySession) {
 
-		// TODO: Add your code here!
 		IVariableField uui = mySession.getVariableField(IProjectVariables.CTICALLINFO, IProjectVariables.CTICALLINFO_FIELD_UUI);
 		IVariableField cticallidField = mySession.getVariableField(IProjectVariables.CTICALLINFO, IProjectVariables.CTICALLINFO_FIELD_CALLID);
 		IVariableField ani = mySession.getVariableField(IProjectVariables.CTICALLINFO, IProjectVariables.CTICALLINFO_FIELD_ANI);
@@ -78,7 +77,10 @@ public class GetCallData extends com.avaya.sce.runtime.BasicServlet {
 		String uuiStr =tempUui.replaceAll(",", "|");
 		//uuiStr="{\"nodeCode\":\"1002\",\"ucid\":\"511224193820101222\"}";
 		//uui.setValue(uuiStr);
+		logs.debug("uuiStr ===> "+uuiStr);
 		Map<String,String> map = TextUtil.toMapForUUI(uuiStr);
+		logs.debug("当前nodeCode ===> " + (null!=map?map.get("nodeCode") : ""));
+		logs.debug("当前vipFlag ===> " + vipFlagField.getStringValue());
 	
 		if(null!=map){
 		
@@ -105,6 +107,7 @@ public class GetCallData extends com.avaya.sce.runtime.BasicServlet {
 			}else if(StringUtils.isNotEmpty(map.get("AgentID"))){
 				nodecode.setValue("1");
 				agentIdField.setValue(map.get("AgentID"));
+				logs.debug("nodecode ===> 1 , AgentID === > " + agentIdField.getStringValue());
 			}else{
 				//挂机
 				//nodecode.setValue("0"); //表示随路数据中callflag没有值 传输不正确
@@ -164,7 +167,7 @@ public class GetCallData extends com.avaya.sce.runtime.BasicServlet {
 		com.avaya.sce.runtime.Goto aGoto = null;
 		list = new java.util.ArrayList(1);
 
-		aGoto = new com.avaya.sce.runtime.Goto("Welcome", 0, true, "Default");
+		aGoto = new com.avaya.sce.runtime.Goto("CheckNodeCode", 0, true, "Default");
 		list.add(aGoto);
 
 		return list;
