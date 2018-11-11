@@ -70,29 +70,20 @@ public class CheckNodeCode extends com.avaya.sce.runtime.Data {
 		java.util.Collection actions = null;
 
 		actions = new java.util.ArrayList(1);
-		com.avaya.sce.runtime.BooleanOperation bo1 = new com.avaya.sce.runtime.BooleanOperation(com.avaya.sce.runtime.BooleanOperation.OR);
-		com.avaya.sce.runtime.Expression be1 = new com.avaya.sce.runtime.Expression("expression1", "CQValue:nodecode", com.avaya.sce.runtime.Expression.STRING_EQUAL, "0", false);
-		bo1.addExpression(be1);
-		com.avaya.sce.runtime.Expression be2 = new com.avaya.sce.runtime.Expression("expression2", "CQValue:nodecode", com.avaya.sce.runtime.Expression.STRING_EQUAL, "3", false);
-		bo1.addExpression(be2);
-		com.avaya.sce.runtime.Expression be3 = new com.avaya.sce.runtime.Expression("expression3", "CQValue:nodecode", com.avaya.sce.runtime.Expression.STRING_EQUAL, "4", false);
-		bo1.addExpression(be3);
-		com.avaya.sce.runtime.Expression be4 = new com.avaya.sce.runtime.Expression("expression4", "CQValue:nodecode", com.avaya.sce.runtime.Expression.STRING_EQUAL, "7", false);
-		bo1.addExpression(be4);
 		if(evaluateActions(actions, mySession)) {
 			return true;
 		}
 		actions = null;
 
-		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition").setDebugId(619)).evaluate(mySession, bo1)) {
-			actions = new java.util.ArrayList(2);
+		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition1", "CQValue:nodecode", com.avaya.sce.runtime.Expression.STRING_EQUAL, "9", false).setDebugId(619)).evaluate(mySession)) {
+			actions = new java.util.ArrayList(1);
 			actions.add(new com.avaya.sce.runtime.Next("GetAgentId", "满意度").setDebugId(621));
 			if(evaluateActions(actions, mySession)) {
 				return true;
 			}
 			actions = null;
 
-		} else if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition1", "CQValue:nodecode", com.avaya.sce.runtime.Expression.STRING_EQUAL, "1", false).setDebugId(789)).evaluate(mySession)) {
+		} else if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition2", "CQValue:nodecode", com.avaya.sce.runtime.Expression.STRING_EQUAL, "1", false).setDebugId(789)).evaluate(mySession)) {
 			actions = new java.util.ArrayList(1);
 			actions.add(new com.avaya.sce.runtime.Next("PromptAgentNo", "播报工号").setDebugId(790));
 			if(evaluateActions(actions, mySession)) {
