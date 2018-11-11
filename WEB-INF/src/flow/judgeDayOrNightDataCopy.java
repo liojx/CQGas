@@ -77,7 +77,7 @@ public class judgeDayOrNightDataCopy extends com.avaya.sce.runtime.Data {
 
 		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition1", "dayOrNight", com.avaya.sce.runtime.Expression.STRING_EQUAL, "d", false).setDebugId(1253)).evaluate(mySession)) {
 			actions = new java.util.ArrayList(1);
-			actions.add(new com.avaya.sce.runtime.Next("DayAnnon", "白天").setDebugId(1254));
+			actions.add(new com.avaya.sce.runtime.Next("MainMenuDay", "白天").setDebugId(1254));
 			if(evaluateActions(actions, mySession)) {
 				return true;
 			}

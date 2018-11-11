@@ -106,10 +106,9 @@ public class NightAnnon extends com.avaya.sce.runtime.Form {
 		java.util.List list = null;
 		String ___tempPromptName = null;
 		// build the list of prompt names
-		list = new java.util.ArrayList(2);
+		list = new java.util.ArrayList(1);
 		
 		list.add(new com.avaya.sce.runtime.PromptRefInfo("night_pre", ""));
-		list.add(new com.avaya.sce.runtime.PromptRefInfo("stopGas", ""));
 
 		return(list);
 	}

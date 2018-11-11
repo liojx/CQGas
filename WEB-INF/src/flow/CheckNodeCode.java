@@ -71,10 +71,14 @@ public class CheckNodeCode extends com.avaya.sce.runtime.Data {
 
 		actions = new java.util.ArrayList(1);
 		com.avaya.sce.runtime.BooleanOperation bo1 = new com.avaya.sce.runtime.BooleanOperation(com.avaya.sce.runtime.BooleanOperation.OR);
-		com.avaya.sce.runtime.Expression be1 = new com.avaya.sce.runtime.Expression("expression1", "CQValue:nodecode", com.avaya.sce.runtime.Expression.STRING_EQUAL, "5", false);
+		com.avaya.sce.runtime.Expression be1 = new com.avaya.sce.runtime.Expression("expression1", "CQValue:nodecode", com.avaya.sce.runtime.Expression.STRING_EQUAL, "0", false);
 		bo1.addExpression(be1);
-		com.avaya.sce.runtime.Expression be2 = new com.avaya.sce.runtime.Expression("expression2", "CQValue:nodecode", com.avaya.sce.runtime.Expression.STRING_EQUAL, "2", false);
+		com.avaya.sce.runtime.Expression be2 = new com.avaya.sce.runtime.Expression("expression2", "CQValue:nodecode", com.avaya.sce.runtime.Expression.STRING_EQUAL, "3", false);
 		bo1.addExpression(be2);
+		com.avaya.sce.runtime.Expression be3 = new com.avaya.sce.runtime.Expression("expression3", "CQValue:nodecode", com.avaya.sce.runtime.Expression.STRING_EQUAL, "4", false);
+		bo1.addExpression(be3);
+		com.avaya.sce.runtime.Expression be4 = new com.avaya.sce.runtime.Expression("expression4", "CQValue:nodecode", com.avaya.sce.runtime.Expression.STRING_EQUAL, "7", false);
+		bo1.addExpression(be4);
 		if(evaluateActions(actions, mySession)) {
 			return true;
 		}
@@ -82,7 +86,7 @@ public class CheckNodeCode extends com.avaya.sce.runtime.Data {
 
 		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition").setDebugId(619)).evaluate(mySession, bo1)) {
 			actions = new java.util.ArrayList(2);
-			actions.add(new com.avaya.sce.runtime.Next("Welcome", "满意度").setDebugId(621));
+			actions.add(new com.avaya.sce.runtime.Next("GetAgentId", "满意度").setDebugId(621));
 			if(evaluateActions(actions, mySession)) {
 				return true;
 			}
@@ -97,25 +101,12 @@ public class CheckNodeCode extends com.avaya.sce.runtime.Data {
 			actions = null;
 
 		} else {
-
-			if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition2", "CQValue:vipflag", com.avaya.sce.runtime.Expression.INT_EQUAL, "1", false).setDebugId(774)).evaluate(mySession)) {
-				actions = new java.util.ArrayList(2);
-				actions.add(new com.avaya.sce.runtime.varoperations.Assign("MainMenuDay:utterance", "9", true).setDebugId(779));
-				actions.add(new com.avaya.sce.runtime.Next("ToRenGong", "VIP").setDebugId(776));
-				if(evaluateActions(actions, mySession)) {
-					return true;
-				}
-				actions = null;
-
-			} else {
-				actions = new java.util.ArrayList(1);
-				actions.add(new com.avaya.sce.runtime.Next("Welcome", "主流程").setDebugId(618));
-				if(evaluateActions(actions, mySession)) {
-					return true;
-				}
-				actions = null;
+			actions = new java.util.ArrayList(1);
+			actions.add(new com.avaya.sce.runtime.Next("Welcome_1", "主流程").setDebugId(618));
+			if(evaluateActions(actions, mySession)) {
+				return true;
 			}
-
+			actions = null;
 		}
 
 

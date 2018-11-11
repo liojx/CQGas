@@ -71,7 +71,7 @@ public class SatisfyMenu extends com.avaya.sce.runtime.Menu {
 		// Item has no prompts associated
 		eventPromptNames = new java.util.ArrayList();
 
-		event = new com.avaya.sce.runtime.Event(com.avaya.sce.runtimecommon.SCERT.EVENT_NOINPUT, (com.avaya.sce.runtime.PromptRefInfo[])eventPromptNames.toArray(new com.avaya.sce.runtime.PromptRefInfo[0]), new com.avaya.sce.runtime.Goto("ThreeCtsCopy8", 0, true, ""));
+		event = new com.avaya.sce.runtime.Event(com.avaya.sce.runtimecommon.SCERT.EVENT_NOINPUT, (com.avaya.sce.runtime.PromptRefInfo[])eventPromptNames.toArray(new com.avaya.sce.runtime.PromptRefInfo[0]), new com.avaya.sce.runtime.Goto("ThreeCtsCopy8", 3, true, ""));
 		list.add(event);
 
 		// build the list of prompt names
@@ -79,7 +79,7 @@ public class SatisfyMenu extends com.avaya.sce.runtime.Menu {
 		
 		eventPromptNames.add(new com.avaya.sce.runtime.PromptRefInfo("Nomatch_004", ""));
 
-		event = new com.avaya.sce.runtime.Event(com.avaya.sce.runtimecommon.SCERT.EVENT_NOMATCH, (com.avaya.sce.runtime.PromptRefInfo[])eventPromptNames.toArray(new com.avaya.sce.runtime.PromptRefInfo[0]), new com.avaya.sce.runtime.Goto("ThreeCtsCopy8", 0, true, ""));
+		event = new com.avaya.sce.runtime.Event(com.avaya.sce.runtimecommon.SCERT.EVENT_NOMATCH, (com.avaya.sce.runtime.PromptRefInfo[])eventPromptNames.toArray(new com.avaya.sce.runtime.PromptRefInfo[0]), new com.avaya.sce.runtime.Goto("ThreeCtsCopy8", 3, true, ""));
 		list.add(event);
 		event = new com.avaya.sce.runtime.OnDisconnect("End", false);
 		list.add(event);
@@ -98,35 +98,77 @@ public class SatisfyMenu extends com.avaya.sce.runtime.Menu {
 		java.util.List list = null;
 		com.avaya.sce.runtime.Choice choice = null;
 		java.util.Collection grammarInfo = null;
-		list = new java.util.ArrayList(4);
+		list = new java.util.ArrayList(10);
 		String ___tempGrammarName = null;
 
 		// build the list of grammar information objects for the choice
 		grammarInfo = new java.util.ArrayList();
 
 
-		choice = new com.avaya.sce.runtime.Choice("非常满意", "1", true, "exact", "UpdateSatisfy", grammarInfo, true);
+		choice = new com.avaya.sce.runtime.Choice("0", "0", true, "exact", "UpdateSatisfy", grammarInfo, true);
 		list.add(choice);
 
 		// build the list of grammar information objects for the choice
 		grammarInfo = new java.util.ArrayList();
 
 
-		choice = new com.avaya.sce.runtime.Choice("满意", "2", true, "exact", "UpdateSatisfy", grammarInfo, true);
+		choice = new com.avaya.sce.runtime.Choice("1", "1", true, "exact", "UpdateSatisfy", grammarInfo, true);
 		list.add(choice);
 
 		// build the list of grammar information objects for the choice
 		grammarInfo = new java.util.ArrayList();
 
 
-		choice = new com.avaya.sce.runtime.Choice("一般", "3", true, "exact", "UpdateSatisfy", grammarInfo, true);
+		choice = new com.avaya.sce.runtime.Choice("2", "2", true, "exact", "UpdateSatisfy", grammarInfo, true);
 		list.add(choice);
 
 		// build the list of grammar information objects for the choice
 		grammarInfo = new java.util.ArrayList();
 
 
-		choice = new com.avaya.sce.runtime.Choice("不满意", "4", true, "exact", "UpdateSatisfy", grammarInfo, true);
+		choice = new com.avaya.sce.runtime.Choice("3", "3", true, "exact", "UpdateSatisfy", grammarInfo, true);
+		list.add(choice);
+
+		// build the list of grammar information objects for the choice
+		grammarInfo = new java.util.ArrayList();
+
+
+		choice = new com.avaya.sce.runtime.Choice("4", "4", true, "exact", "UpdateSatisfy", grammarInfo, true);
+		list.add(choice);
+
+		// build the list of grammar information objects for the choice
+		grammarInfo = new java.util.ArrayList();
+
+
+		choice = new com.avaya.sce.runtime.Choice("5", "5", true, "exact", "UpdateSatisfy", grammarInfo, true);
+		list.add(choice);
+
+		// build the list of grammar information objects for the choice
+		grammarInfo = new java.util.ArrayList();
+
+
+		choice = new com.avaya.sce.runtime.Choice("6", "6", true, "exact", "UpdateSatisfy", grammarInfo, true);
+		list.add(choice);
+
+		// build the list of grammar information objects for the choice
+		grammarInfo = new java.util.ArrayList();
+
+
+		choice = new com.avaya.sce.runtime.Choice("7", "7", true, "exact", "UpdateSatisfy", grammarInfo, true);
+		list.add(choice);
+
+		// build the list of grammar information objects for the choice
+		grammarInfo = new java.util.ArrayList();
+
+
+		choice = new com.avaya.sce.runtime.Choice("8", "8", true, "exact", "UpdateSatisfy", grammarInfo, true);
+		list.add(choice);
+
+		// build the list of grammar information objects for the choice
+		grammarInfo = new java.util.ArrayList();
+
+
+		choice = new com.avaya.sce.runtime.Choice("9", "9", true, "exact", "UpdateSatisfy", grammarInfo, true);
 		list.add(choice);
 
 		return(list);
@@ -146,7 +188,7 @@ public class SatisfyMenu extends com.avaya.sce.runtime.Menu {
 		// build the list of prompt names
 		list = new java.util.ArrayList(1);
 		
-		list.add(new com.avaya.sce.runtime.PromptRefInfo("SatisfyMenu_026", ""));
+		list.add(new com.avaya.sce.runtime.PromptRefInfo("SatisfyMenu_026", "English"));
 
 		return(list);
 	}

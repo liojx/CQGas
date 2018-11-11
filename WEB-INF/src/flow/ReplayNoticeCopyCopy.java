@@ -107,7 +107,7 @@ public class ReplayNoticeCopyCopy extends com.avaya.sce.runtime.Menu {
 		grammarInfo = new java.util.ArrayList();
 
 
-		choice = new com.avaya.sce.runtime.Choice("重听", "1", true, "exact", "commonSence", grammarInfo, true);
+		choice = new com.avaya.sce.runtime.Choice("重听", "9", true, "exact", "commonSence", grammarInfo, true);
 		list.add(choice);
 
 		// build the list of grammar information objects for the choice
@@ -141,7 +141,7 @@ public class ReplayNoticeCopyCopy extends com.avaya.sce.runtime.Menu {
 		// build the list of prompt names
 		list = new java.util.ArrayList(1);
 		
-		list.add(new com.avaya.sce.runtime.PromptRefInfo("ReplayBack_009", "Chinese"));
+		list.add(new com.avaya.sce.runtime.PromptRefInfo("ReplayBack_009", "English"));
 
 		return(list);
 	}

@@ -59,12 +59,12 @@ public class SaveServiceLog extends com.avaya.sce.runtime.BasicServlet {
 		}else if("2".equals(menuKey)){
 			btnCode = "0321";
 		}else if("3".equals(menuKey)){
-			IVariableField serviceMenuField = mySession.getVariableField(IProjectVariables.SERVICE_APPLY_MENU,IProjectVariables.SERVICE_APPLY_MENU_FIELD_UTTERANCE);
-			if("1".equals(serviceMenuField.getStringValue())){
-				btnCode = "0322";
-			}else if("2".equals(serviceMenuField.getStringValue())){
-				btnCode = "0329";
-			}
+			// IVariableField serviceMenuField = mySession.getVariableField(IProjectVariables.SERVICE_APPLY_MENU,IProjectVariables.SERVICE_APPLY_MENU_FIELD_UTTERANCE);
+//			if("1".equals(serviceMenuField.getStringValue())){
+//				btnCode = "0322";
+//			}else if("2".equals(serviceMenuField.getStringValue())){
+//				btnCode = "0329";
+//			}
 		}else if("4".equals(menuKey)){
 			btnCode = "0323";
 		}else if("5".equals(menuKey)){

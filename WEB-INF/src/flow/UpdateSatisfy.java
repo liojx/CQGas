@@ -48,16 +48,14 @@ public class UpdateSatisfy extends com.avaya.sce.runtime.BasicServlet {
 	 */
 	public void servletImplementation(com.avaya.sce.runtimecommon.SCESession mySession) {
 
-		// TODO: Add your code here!
 		IVariableField mydIdField = mySession.getVariableField(IProjectVariables.CQVALUE, IProjectVariables.CQVALUE_FIELD_MYDID);
 		IVariableField choiceField =mySession.getVariableField(IProjectVariables.SATISFY_MENU, IProjectVariables.SATISFY_MENU_FIELD_UTTERANCE);
+		System.out.println("客户满意度评分：" + choiceField.getStringValue() + ", ID :" + mydIdField.getStringValue());
 		int i = 0;
 		try {
 			i  =	AppUtil.updateSatisfy(choiceField.getStringValue(),mydIdField.getStringValue());
-			
 		} 
 		catch (Exception e) {
-			
 			e.printStackTrace();
 		}
 	}

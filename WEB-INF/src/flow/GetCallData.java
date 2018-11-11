@@ -85,7 +85,7 @@ public class GetCallData extends com.avaya.sce.runtime.BasicServlet {
 		if(null!=map){
 		
 			
-			if(StringUtils.isNotEmpty(map.get("nodeCode"))&&StringUtils.isEmpty(map.get("AgentID"))){
+			if(StringUtils.isNotEmpty(map.get("nodeCode")) && StringUtils.isEmpty(map.get("AgentID"))){
 				TransferVO transfervo = new TransferVO();
 				nodecode.setValue(map.get("nodeCode"));
 				//插入转接log
@@ -98,9 +98,8 @@ public class GetCallData extends com.avaya.sce.runtime.BasicServlet {
 				agentIdField.setValue(map.get("agentId"));
 				logs.debug("转接agentId===="+agentIdField.getStringValue());
 				try {
-					AppUtil.saveTransferLog(transfervo);
+					// AppUtil.saveTransferLog(transfervo);
 				} catch (Exception e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 				
@@ -129,13 +128,6 @@ public class GetCallData extends com.avaya.sce.runtime.BasicServlet {
 				callidField.setValue(callLogvo.getCallId());
 				callTypeField.setValue(callLogvo.getCallType());
 				logs.debug("初始化的callid====" + callLogvo.getCallId());
-				try {
-//					AppUtil.saveCallLog(callLogvo);
-//					vipFlagField.setValue(AppUtil.checkVIP(ani.getStringValue()));
-				} catch (Exception e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
 			}
 			
 			

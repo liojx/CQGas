@@ -1,11 +1,12 @@
 package flow;
 
+import java.util.UUID;
+
 import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
 import org.springframework.dao.EmptyResultDataAccessException;
 
 import beans.AgentVO;
-import beans.CustomerVO;
 import beans.SatisfyVO;
 
 import com.avaya.sce.runtimecommon.IVariableField;
@@ -50,15 +51,8 @@ public class GetAgentId extends com.avaya.sce.runtime.BasicServlet {
 	 */
 	public void servletImplementation(com.avaya.sce.runtimecommon.SCESession mySession) {
 
-		// TODO: Add your code here!
-		//IVariableField yqzh_field = mySession.getVariableField(IProjectVariables.GAS_FEE_QRY,IProjectVariables.GAS_FEE_QRY_FIELD_UTTERANCE);
-		//IVariableField custtypeField = mySession.getVariableField(IProjectVariables.CQVALUE, IProjectVariables.CQVALUE_FIELD_CUSTTYPE);
-		//IVariableField kh_field = mySession.getVariableField(IProjectVariables.CQVALUE,IProjectVariables.CQVALUE_FIELD_KHID);
-		//IVariableField Cq_yqzh = mySession.getVariableField(IProjectVariables.CQVALUE,IProjectVariables.CQVALUE_FIELD_YQZH);
-		//Cq_yqzh.setValue(arg0)
 		IVariableField callIdField = mySession.getVariableField(IProjectVariables.CQVALUE,IProjectVariables.CQVALUE_FIELD_CALLID);
 		IVariableField aniField = mySession.getVariableField(IProjectVariables.CTICALLINFO,IProjectVariables.CTICALLINFO_FIELD_ANI);
-		//custtypeField.setValue(null);
 		IVariableField satisfyField = mySession.getVariableField(IProjectVariables.CQVALUE, IProjectVariables.CQVALUE_FIELD_SATISFYFLAG);
 		IVariableField agentIdField = mySession.getVariableField(IProjectVariables.CQVALUE, IProjectVariables.CQVALUE_FIELD_AGENTID);
 		IVariableField mydIdField = mySession.getVariableField(IProjectVariables.CQVALUE, IProjectVariables.CQVALUE_FIELD_MYDID);
@@ -66,12 +60,13 @@ public class GetAgentId extends com.avaya.sce.runtime.BasicServlet {
 		logs.debug("满意度callId==="+callIdField.getStringValue());
 		try {
 			AgentVO  vo  =	AppUtil.getAgentVO(callIdField.getStringValue());
-			if(vo!=null){
+			if( vo !=null ){
 				SatisfyVO svo  = new SatisfyVO();
 				svo.setCallId(callIdField.getStringValue());
-				logs.debug("满意度mydId==="+vo.getMydId());
-				svo.setMydId(vo.getMydId());
-				svo.setSvrNo("1");
+				
+				String uuid = UUID.randomUUID().toString().replaceAll("-", "");
+				logs.debug("满意度mydId==="+uuid);
+				svo.setMydId(uuid);
 				svo.setTelNo(aniField.getStringValue());
 				if(StringUtils.isNotEmpty(agentIdField.getStringValue())){
 					svo.setAgentId(agentIdField.getStringValue());
@@ -79,17 +74,15 @@ public class GetAgentId extends com.avaya.sce.runtime.BasicServlet {
 					svo.setAgentId(vo.getAgentId());
 				}
 				logs.debug("满意度agentId==="+svo.getAgentId());
-				//svo.setMydTypeId("0");
 				i  = AppUtil.saveSatisfy(svo);
+				System.out.println("满意度数据：" + svo.toString());
 				mydIdField.setValue(vo.getMydId());
-				
 			}
 		} catch(EmptyResultDataAccessException e){
 			i=-1;
 		}
 		catch (Exception e) {
 			i=-2;
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		satisfyField.setValue(i);
@@ -118,7 +111,7 @@ public class GetAgentId extends com.avaya.sce.runtime.BasicServlet {
 		com.avaya.sce.runtime.Goto aGoto = null;
 		list = new java.util.ArrayList(1);
 
-		aGoto = new com.avaya.sce.runtime.Goto("CheckSatisFlag", 0, true, "Default");
+		aGoto = new com.avaya.sce.runtime.Goto("SatisfyMenu", 0, true, "Default");
 		list.add(aGoto);
 
 		return list;

@@ -105,11 +105,8 @@ public class DayAnnon extends com.avaya.sce.runtime.Form {
 	public java.util.Collection getPrompts(com.avaya.sce.runtimecommon.SCESession mySession) {
 		java.util.List list = null;
 		String ___tempPromptName = null;
-		// build the list of prompt names
-		list = new java.util.ArrayList(2);
-		
-		list.add(new com.avaya.sce.runtime.PromptRefInfo("dayHints", "English"));
-		list.add(new com.avaya.sce.runtime.PromptRefInfo("stopGas", ""));
+		// Item has no prompts associated
+		list = new java.util.ArrayList();
 
 		return(list);
 	}

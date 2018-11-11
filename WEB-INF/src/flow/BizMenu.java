@@ -155,7 +155,7 @@ public class BizMenu extends com.avaya.sce.runtime.Menu {
 		// build the list of prompt names
 		list = new java.util.ArrayList(1);
 		
-		list.add(new com.avaya.sce.runtime.PromptRefInfo("BusiConsMenu_019", ""));
+		list.add(new com.avaya.sce.runtime.PromptRefInfo("BusiConsMenu_019", "English"));
 
 		return(list);
 	}

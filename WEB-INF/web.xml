@@ -131,10 +131,7 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>checkCustType</servlet-name>
         <servlet-class>flow.checkCustType</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_134">
-        <servlet-name>NoticeMenu</servlet-name>
-        <servlet-class>flow.NoticeMenu</servlet-class>
-    </servlet>
+    
     <servlet id="SAGE-callflow-servlet_main_119">
         <servlet-name>TScust</servlet-name>
         <servlet-class>flow.TScust</servlet-class>
@@ -151,62 +148,26 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>PromptRes</servlet-name>
         <servlet-class>flow.PromptRes</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_141">
-        <servlet-name>NoticeInfoQry</servlet-name>
-        <servlet-class>flow.NoticeInfoQry</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_148">
-        <servlet-name>PromptNotice</servlet-name>
-        <servlet-class>flow.PromptNotice</servlet-class>
-    </servlet>
+    
+    
     <servlet id="SAGE-callflow-servlet_main_153">
         <servlet-name>TransferToCell</servlet-name>
         <servlet-class>flow.TransferToCell</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_164">
-        <servlet-name>ReplayNotice</servlet-name>
-        <servlet-class>flow.ReplayNotice</servlet-class>
-    </servlet>
+    
     <servlet id="SAGE-callflow-servlet_main_174">
-        <servlet-name>Welcome</servlet-name>
-        <servlet-class>flow.Welcome</servlet-class>
+        <servlet-name>Welcome_1</servlet-name>
+        <servlet-class>flow.Welcome_1</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_183">
-        <servlet-name>BusiConsMenu</servlet-name>
-        <servlet-class>flow.BusiConsMenu</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_194">
-        <servlet-name>ServiceApplyMenu</servlet-name>
-        <servlet-class>flow.ServiceApplyMenu</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_220">
-        <servlet-name>SafeKnowledge</servlet-name>
-        <servlet-class>flow.SafeKnowledge</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_238">
-        <servlet-name>BusiMenu3</servlet-name>
-        <servlet-class>flow.BusiMenu3</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_234">
-        <servlet-name>BusiMenu2</servlet-name>
-        <servlet-class>flow.BusiMenu2</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_230">
-        <servlet-name>BusiMenu1</servlet-name>
-        <servlet-class>flow.BusiMenu1</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_250">
-        <servlet-name>BusiMenu6</servlet-name>
-        <servlet-class>flow.BusiMenu6</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_246">
-        <servlet-name>BusiMenu5</servlet-name>
-        <servlet-class>flow.BusiMenu5</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_242">
-        <servlet-name>BusiMenu4</servlet-name>
-        <servlet-class>flow.BusiMenu4</servlet-class>
-    </servlet>
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <servlet id="SAGE-callflow-servlet_main_267">
         <servlet-name>ReplayFeeInfo</servlet-name>
         <servlet-class>flow.ReplayFeeInfo</servlet-class>
@@ -233,10 +194,7 @@ Copyright 2004-2011 Avaya Inc.
     </servlet>
     
     
-    <servlet id="SAGE-callflow-servlet_main_367">
-        <servlet-name>checkNotice</servlet-name>
-        <servlet-class>flow.checkNotice</servlet-class>
-    </servlet>
+    
     <servlet id="SAGE-callflow-servlet_main_391">
         <servlet-name>ErrorOpt1</servlet-name>
         <servlet-class>flow.ErrorOpt1</servlet-class>
@@ -249,27 +207,12 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>InitBack</servlet-name>
         <servlet-class>flow.InitBack</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_448">
-        <servlet-name>ThreeCtsCopy4</servlet-name>
-        <servlet-class>flow.ThreeCtsCopy4</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_474">
-        <servlet-name>ThreeCtsCopy5</servlet-name>
-        <servlet-class>flow.ThreeCtsCopy5</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_499">
-        <servlet-name>ThreeCtsCopy6</servlet-name>
-        <servlet-class>flow.ThreeCtsCopy6</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_524">
-        <servlet-name>ThreeCtsCopy7</servlet-name>
-        <servlet-class>flow.ThreeCtsCopy7</servlet-class>
-    </servlet>
     
-    <servlet id="SAGE-callflow-servlet_main_549">
-        <servlet-name>CheckSatisFlag</servlet-name>
-        <servlet-class>flow.CheckSatisFlag</servlet-class>
-    </servlet>
+    
+    
+    
+    
+    
     <servlet id="SAGE-callflow-servlet_main_546">
         <servlet-name>GetAgentId</servlet-name>
         <servlet-class>flow.GetAgentId</servlet-class>
@@ -298,26 +241,11 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>GetCallData</servlet-name>
         <servlet-class>flow.GetCallData</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_637">
-        <servlet-name>GotoBusiness</servlet-name>
-        <servlet-class>flow.GotoBusiness</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_647">
-        <servlet-name>SaveServiceLog</servlet-name>
-        <servlet-class>flow.SaveServiceLog</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_705">
-        <servlet-name>NoAboutInfoCopy</servlet-name>
-        <servlet-class>flow.NoAboutInfoCopy</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_711">
-        <servlet-name>ReplaySafe</servlet-name>
-        <servlet-class>flow.ReplaySafe</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_725">
-        <servlet-name>ThreeCtsCopy9</servlet-name>
-        <servlet-class>flow.ThreeCtsCopy9</servlet-class>
-    </servlet>
+    
+    
+    
+    
+    
     <servlet id="SAGE-callflow-servlet_main_748">
         <servlet-name>SetUUI</servlet-name>
         <servlet-class>flow.SetUUI</servlet-class>
@@ -441,13 +369,66 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>NightAnnon</servlet-name>
         <servlet-class>flow.NightAnnon</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_1258">
-        <servlet-name>DayAnnon</servlet-name>
-        <servlet-class>flow.DayAnnon</servlet-class>
-    </servlet>
+    
     <servlet id="SAGE-callflow-servlet_main_1276">
         <servlet-name>commonSence</servlet-name>
         <servlet-class>flow.commonSence</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1298">
+        <servlet-name>Welcome_2</servlet-name>
+        <servlet-class>flow.Welcome_2</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1303">
+        <servlet-name>Important_Report</servlet-name>
+        <servlet-class>flow.Important_Report</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1317">
+        <servlet-name>NoticeMenu</servlet-name>
+        <servlet-class>flow.NoticeMenu</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1334">
+        <servlet-name>Notice_5_1</servlet-name>
+        <servlet-class>flow.Notice_5_1</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1338">
+        <servlet-name>Notice_5_2</servlet-name>
+        <servlet-class>flow.Notice_5_2</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1342">
+        <servlet-name>Notice_5_3</servlet-name>
+        <servlet-class>flow.Notice_5_3</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1346">
+        <servlet-name>Notice_5_4</servlet-name>
+        <servlet-class>flow.Notice_5_4</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1363">
+        <servlet-name>ReplayNoticeCopyCopy2</servlet-name>
+        <servlet-class>flow.ReplayNoticeCopyCopy2</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1379">
+        <servlet-name>judgeBtnCopy</servlet-name>
+        <servlet-class>flow.judgeBtnCopy</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1424">
+        <servlet-name>GasFeeQry_temp</servlet-name>
+        <servlet-class>flow.GasFeeQry_temp</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1490">
+        <servlet-name>transferOwnshipHitsCopy</servlet-name>
+        <servlet-class>flow.transferOwnshipHitsCopy</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1485">
+        <servlet-name>applyGasHintsCopy</servlet-name>
+        <servlet-class>flow.applyGasHintsCopy</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1464">
+        <servlet-name>gasPriceCopy</servlet-name>
+        <servlet-class>flow.gasPriceCopy</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1468">
+        <servlet-name>BizMenuCopy</servlet-name>
+        <servlet-class>flow.BizMenuCopy</servlet-class>
     </servlet>
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
@@ -517,10 +498,7 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>checkCustType</servlet-name>
         <url-pattern>/checkCustType</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_134">
-        <servlet-name>NoticeMenu</servlet-name>
-        <url-pattern>/NoticeMenu</url-pattern>
-    </servlet-mapping>
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_main_119">
         <servlet-name>TScust</servlet-name>
         <url-pattern>/TScust</url-pattern>
@@ -537,62 +515,26 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>PromptRes</servlet-name>
         <url-pattern>/PromptRes</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_141">
-        <servlet-name>NoticeInfoQry</servlet-name>
-        <url-pattern>/NoticeInfoQry</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_148">
-        <servlet-name>PromptNotice</servlet-name>
-        <url-pattern>/PromptNotice</url-pattern>
-    </servlet-mapping>
+    
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_main_153">
         <servlet-name>TransferToCell</servlet-name>
         <url-pattern>/TransferToCell</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_164">
-        <servlet-name>ReplayNotice</servlet-name>
-        <url-pattern>/ReplayNotice</url-pattern>
-    </servlet-mapping>
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_main_174">
-        <servlet-name>Welcome</servlet-name>
-        <url-pattern>/Welcome</url-pattern>
+        <servlet-name>Welcome_1</servlet-name>
+        <url-pattern>/Welcome_1</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_183">
-        <servlet-name>BusiConsMenu</servlet-name>
-        <url-pattern>/BusiConsMenu</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_194">
-        <servlet-name>ServiceApplyMenu</servlet-name>
-        <url-pattern>/ServiceApplyMenu</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_220">
-        <servlet-name>SafeKnowledge</servlet-name>
-        <url-pattern>/SafeKnowledge</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_238">
-        <servlet-name>BusiMenu3</servlet-name>
-        <url-pattern>/BusiMenu3</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_234">
-        <servlet-name>BusiMenu2</servlet-name>
-        <url-pattern>/BusiMenu2</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_230">
-        <servlet-name>BusiMenu1</servlet-name>
-        <url-pattern>/BusiMenu1</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_250">
-        <servlet-name>BusiMenu6</servlet-name>
-        <url-pattern>/BusiMenu6</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_246">
-        <servlet-name>BusiMenu5</servlet-name>
-        <url-pattern>/BusiMenu5</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_242">
-        <servlet-name>BusiMenu4</servlet-name>
-        <url-pattern>/BusiMenu4</url-pattern>
-    </servlet-mapping>
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_main_267">
         <servlet-name>ReplayFeeInfo</servlet-name>
         <url-pattern>/ReplayFeeInfo</url-pattern>
@@ -618,10 +560,7 @@ Copyright 2004-2011 Avaya Inc.
         <url-pattern>/NoAboutInfo</url-pattern>
     </servlet-mapping>
     
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_367">
-        <servlet-name>checkNotice</servlet-name>
-        <url-pattern>/checkNotice</url-pattern>
-    </servlet-mapping>
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_main_391">
         <servlet-name>ErrorOpt1</servlet-name>
         <url-pattern>/ErrorOpt1</url-pattern>
@@ -634,26 +573,11 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>InitBack</servlet-name>
         <url-pattern>/InitBack</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_448">
-        <servlet-name>ThreeCtsCopy4</servlet-name>
-        <url-pattern>/ThreeCtsCopy4</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_474">
-        <servlet-name>ThreeCtsCopy5</servlet-name>
-        <url-pattern>/ThreeCtsCopy5</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_499">
-        <servlet-name>ThreeCtsCopy6</servlet-name>
-        <url-pattern>/ThreeCtsCopy6</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_524">
-        <servlet-name>ThreeCtsCopy7</servlet-name>
-        <url-pattern>/ThreeCtsCopy7</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_549">
-        <servlet-name>CheckSatisFlag</servlet-name>
-        <url-pattern>/CheckSatisFlag</url-pattern>
-    </servlet-mapping>
+    
+    
+    
+    
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_main_546">
         <servlet-name>GetAgentId</servlet-name>
         <url-pattern>/GetAgentId</url-pattern>
@@ -682,26 +606,11 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>GetCallData</servlet-name>
         <url-pattern>/GetCallData</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_637">
-        <servlet-name>GotoBusiness</servlet-name>
-        <url-pattern>/GotoBusiness</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_647">
-        <servlet-name>SaveServiceLog</servlet-name>
-        <url-pattern>/SaveServiceLog</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_705">
-        <servlet-name>NoAboutInfoCopy</servlet-name>
-        <url-pattern>/NoAboutInfoCopy</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_711">
-        <servlet-name>ReplaySafe</servlet-name>
-        <url-pattern>/ReplaySafe</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_725">
-        <servlet-name>ThreeCtsCopy9</servlet-name>
-        <url-pattern>/ThreeCtsCopy9</url-pattern>
-    </servlet-mapping>
+    
+    
+    
+    
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_main_748">
         <servlet-name>SetUUI</servlet-name>
         <url-pattern>/SetUUI</url-pattern>
@@ -820,13 +729,66 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>NightAnnon</servlet-name>
         <url-pattern>/NightAnnon</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_1258">
-        <servlet-name>DayAnnon</servlet-name>
-        <url-pattern>/DayAnnon</url-pattern>
-    </servlet-mapping>
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_main_1276">
         <servlet-name>commonSence</servlet-name>
         <url-pattern>/commonSence</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1298">
+        <servlet-name>Welcome_2</servlet-name>
+        <url-pattern>/Welcome_2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1303">
+        <servlet-name>Important_Report</servlet-name>
+        <url-pattern>/Important_Report</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1317">
+        <servlet-name>NoticeMenu</servlet-name>
+        <url-pattern>/NoticeMenu</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1334">
+        <servlet-name>Notice_5_1</servlet-name>
+        <url-pattern>/Notice_5_1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1338">
+        <servlet-name>Notice_5_2</servlet-name>
+        <url-pattern>/Notice_5_2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1342">
+        <servlet-name>Notice_5_3</servlet-name>
+        <url-pattern>/Notice_5_3</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1346">
+        <servlet-name>Notice_5_4</servlet-name>
+        <url-pattern>/Notice_5_4</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1363">
+        <servlet-name>ReplayNoticeCopyCopy2</servlet-name>
+        <url-pattern>/ReplayNoticeCopyCopy2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1379">
+        <servlet-name>judgeBtnCopy</servlet-name>
+        <url-pattern>/judgeBtnCopy</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1424">
+        <servlet-name>GasFeeQry_temp</servlet-name>
+        <url-pattern>/GasFeeQry_temp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1490">
+        <servlet-name>transferOwnshipHitsCopy</servlet-name>
+        <url-pattern>/transferOwnshipHitsCopy</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1485">
+        <servlet-name>applyGasHintsCopy</servlet-name>
+        <url-pattern>/applyGasHintsCopy</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1464">
+        <servlet-name>gasPriceCopy</servlet-name>
+        <url-pattern>/gasPriceCopy</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1468">
+        <servlet-name>BizMenuCopy</servlet-name>
+        <url-pattern>/BizMenuCopy</url-pattern>
     </servlet-mapping>
     
     

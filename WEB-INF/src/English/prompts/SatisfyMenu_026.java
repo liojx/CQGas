@@ -36,7 +36,7 @@ public class SatisfyMenu_026 extends com.avaya.sce.runtime.Prompt {
 		setTimeout(1,8000);
 		setBargin(1,true);
 
-		add(1, new com.avaya.sce.runtime.PromptElement(com.avaya.sce.runtime.PromptElement.TEXT,"非常满意请按1，满意请按2，一般请按3，不满意请按4", null));
+		add(1, new com.avaya.sce.runtime.PromptElement(com.avaya.sce.runtime.PromptElement.PHRASESET,"KYGas:satisifyMenu",false));
 
 	}
 }

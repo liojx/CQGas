@@ -20,7 +20,7 @@ public class KYGas extends com.avaya.sce.runtime.Phraseset {
 		//{{START:PHRASESET:STATIC
 
 		// Create the phrase map, then populate with phrases
-		PHRASE_MAP = new com.avaya.sce.runtime.Phraseset.PhraseMap(20);
+		PHRASE_MAP = new com.avaya.sce.runtime.Phraseset.PhraseMap(42);
 		com.avaya.sce.runtime.Phrase phrase;
 
 		// phrase: commenSense
@@ -52,6 +52,39 @@ public class KYGas extends com.avaya.sce.runtime.Phraseset {
 
 		// phrase: stopGas
 		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "stopGas", "stopGas.wav", ""); 
+
+		// phrase: Welcome_2
+		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "Welcome_2", "Welcome_2.wav", ""); 
+
+		// phrase: Important_Report
+		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "Important_Report", "Important_Report.wav", ""); 
+
+		// phrase: NoticeMenu
+		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "NoticeMenu", "NoticeMenu.wav", ""); 
+
+		// phrase: Notice0501
+		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "Notice0501", "Notice0501.wav", ""); 
+
+		// phrase: Notice0502
+		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "Notice0502", "Notice0502.wav", ""); 
+
+		// phrase: Notice0503
+		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "Notice0503", "Notice0503.wav", ""); 
+
+		// phrase: Notice0504
+		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "Notice0504", "Notice0504.wav", ""); 
+
+		// phrase: GasFeeQryTemp
+		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "GasFeeQryTemp", "GasFeeQryTemp.wav", ""); 
+
+		// phrase: Biz4nightMenu
+		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "Biz4nightMenu", "Biz4nightMenu.wav", ""); 
+
+		// phrase: satisifyMenu
+		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "satisifyMenu", "satisifyMenu.wav", ""); 
+
+		// phrase: ThankYou
+		com.avaya.sce.runtime.Phraseset.addLocalPhrase(PHRASE_MAP, "ThankYou", "ThankYou.wav", ""); 
 
 		//}}END:PHRASESET:STATIC
 	}

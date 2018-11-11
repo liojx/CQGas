@@ -90,4 +90,103 @@
         <comments/>
         <audiofile>stopGas.wav</audiofile>
     </phrase>
+    <phrase version="1.0">
+        <displayname>Welcome_2</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>Welcome_2.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>Important_Report</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>Important_Report.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>NoticeMenu</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>NoticeMenu.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>Notice0501</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>Notice0501.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>Notice0502</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>Notice0502.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>Notice0503</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>Notice0503.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>Notice0504</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>Notice0504.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>GasFeeQryTemp</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>GasFeeQryTemp.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>Biz4nightMenu</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>Biz4nightMenu.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>satisifyMenu</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>satisifyMenu.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>ThankYou</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>ThankYou.wav</audiofile>
+    </phrase>
 </phraseset>

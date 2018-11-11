@@ -100,28 +100,42 @@ public class MainMenuNight extends com.avaya.sce.runtime.Menu {
 		java.util.List list = null;
 		com.avaya.sce.runtime.Choice choice = null;
 		java.util.Collection grammarInfo = null;
-		list = new java.util.ArrayList(3);
+		list = new java.util.ArrayList(5);
 		String ___tempGrammarName = null;
 
 		// build the list of grammar information objects for the choice
 		grammarInfo = new java.util.ArrayList();
 
 
-		choice = new com.avaya.sce.runtime.Choice("气费查询", "2", true, "exact", "GasFeeQry", grammarInfo, true);
+		choice = new com.avaya.sce.runtime.Choice("紧急抢险", "1", true, "exact", "ToRenGong", grammarInfo, true);
 		list.add(choice);
 
 		// build the list of grammar information objects for the choice
 		grammarInfo = new java.util.ArrayList();
 
 
-		choice = new com.avaya.sce.runtime.Choice("用气常识", "3", true, "exact", "print1", grammarInfo, true);
+		choice = new com.avaya.sce.runtime.Choice("气费查询", "2", true, "exact", "GasFeeQry_temp", grammarInfo, true);
 		list.add(choice);
 
 		// build the list of grammar information objects for the choice
 		grammarInfo = new java.util.ArrayList();
 
 
-		choice = new com.avaya.sce.runtime.Choice("业务查询", "5", true, "exact", "print2", grammarInfo, true);
+		choice = new com.avaya.sce.runtime.Choice("业务查询", "4", true, "exact", "print2", grammarInfo, true);
+		list.add(choice);
+
+		// build the list of grammar information objects for the choice
+		grammarInfo = new java.util.ArrayList();
+
+
+		choice = new com.avaya.sce.runtime.Choice("公告查询", "5", true, "exact", "NoticeMenu", grammarInfo, true);
+		list.add(choice);
+
+		// build the list of grammar information objects for the choice
+		grammarInfo = new java.util.ArrayList();
+
+
+		choice = new com.avaya.sce.runtime.Choice("用气常识", "6", true, "exact", "print1", grammarInfo, true);
 		list.add(choice);
 
 		return(list);

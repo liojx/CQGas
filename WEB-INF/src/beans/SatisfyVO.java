@@ -5,7 +5,6 @@ import java.io.Serializable;
 public class SatisfyVO implements Serializable{
 	private String mydId;
 	private String callId;
-	private String svrNo;
 	private String telNo;
 	private String agentId;
 	private String mydTypeId;
@@ -20,12 +19,6 @@ public class SatisfyVO implements Serializable{
 	}
 	public void setCallId(String callId) {
 		this.callId = callId;
-	}
-	public String getSvrNo() {
-		return svrNo;
-	}
-	public void setSvrNo(String svrNo) {
-		this.svrNo = svrNo;
 	}
 	public String getTelNo() {
 		return telNo;
@@ -45,5 +38,10 @@ public class SatisfyVO implements Serializable{
 	public void setMydTypeId(String mydTypeId) {
 		this.mydTypeId = mydTypeId;
 	}
-	
+	@Override
+	public String toString() {
+		return "SatisfyVO [mydId=" + mydId + ", callId=" + callId + ", telNo="
+				+ telNo + ", agentId=" + agentId + ", mydTypeId=" + mydTypeId
+				+ "]";
+	}
 }

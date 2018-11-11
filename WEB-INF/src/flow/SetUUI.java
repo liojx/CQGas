@@ -65,6 +65,7 @@ public class SetUUI extends com.avaya.sce.runtime.BasicServlet {
 		map.put("callFlag", "1");
 		uui.setValue(TextUtil.fromatUUIFromMap(map));
 		 logs.debug("转人工uui数据为："+uui.getStringValue());
+		 logs.debug("当前的menucode = "+ mainMenuField.getShortValue());
 		 if("1".equals(mainMenuField.getStringValue())){
 			 csrNumField.setValue("7003");
 		 }else{

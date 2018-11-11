@@ -108,7 +108,7 @@ public class Thankyou extends com.avaya.sce.runtime.Form {
 		// build the list of prompt names
 		list = new java.util.ArrayList(1);
 		
-		list.add(new com.avaya.sce.runtime.PromptRefInfo("Thankyou_027", ""));
+		list.add(new com.avaya.sce.runtime.PromptRefInfo("Thankyou_027", "English"));
 
 		return(list);
 	}

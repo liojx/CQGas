@@ -36,7 +36,7 @@ public class Thankyou_027 extends com.avaya.sce.runtime.Prompt {
 		setTimeout(1,8000);
 		setBargin(1,true);
 
-		add(1, new com.avaya.sce.runtime.PromptElement(com.avaya.sce.runtime.PromptElement.TEXT,"感谢您的评价，再见！", null));
+		add(1, new com.avaya.sce.runtime.PromptElement(com.avaya.sce.runtime.PromptElement.PHRASESET,"KYGas:ThankYou",false));
 
 	}
 }
