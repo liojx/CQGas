@@ -67,25 +67,21 @@ public class GetCallData extends com.avaya.sce.runtime.BasicServlet {
 		IVariableField vipFlagField = mySession.getVariableField(IProjectVariables.CQVALUE, IProjectVariables.CQVALUE_FIELD_VIPFLAG);
 		
 		IVariableField agentIdField = mySession.getVariableField(IProjectVariables.CQVALUE, IProjectVariables.CQVALUE_FIELD_AGENTID);
-		logs.debug("cticallid==="+cticallidField.getStringValue());
 		logs.debug("uui==="+uui.getStringValue());
 		logs.debug("ani==="+ani.getStringValue());
 		logs.debug("dnis==="+dnis.getStringValue());
 		logs.debug("station==="+station.getStringValue());
-		logs.debug("ucid==="+ ucid.getStringValue());
 		String tempUui =  uui.getStringValue();
 		String uuiStr =tempUui.replaceAll(",", "|");
-		//uuiStr="{\"nodeCode\":\"1002\",\"ucid\":\"511224193820101222\"}";
-		//uui.setValue(uuiStr);
 		logs.debug("uuiStr ===> "+uuiStr);
 		Map<String,String> map = TextUtil.toMapForUUI(uuiStr);
-		logs.debug("当前nodeCode ===> " + (null!=map?map.get("nodeCode") : ""));
-		logs.debug("当前vipFlag ===> " + vipFlagField.getStringValue());
+		logs.debug("当前nodeCode ===> " +  (null!=map?map.get("nodeCode") : ""));
+		logs.debug("当前agentId-->" + map.get("agentId")+",AgentID-->"+map.get("AgentID"));
 	
 		if(null!=map){
-			if(StringUtils.isNotEmpty(map.get("nodeCode")) && StringUtils.isNotEmpty(map.get("agentId"))){
+			if(StringUtils.isNotEmpty(map.get("nodeCode")) && (StringUtils.isNotEmpty(map.get("agentId")) || StringUtils.isNotEmpty(map.get("AgentID")))){
 				nodecode.setValue("9");
-			}else if(StringUtils.isNotEmpty(map.get("nodeCode")) && StringUtils.isEmpty(map.get("agentId"))){
+			}else if(StringUtils.isNotEmpty(map.get("nodeCode")) && StringUtils.isEmpty(map.get("AgentID"))){
 				TransferVO transfervo = new TransferVO();
 				nodecode.setValue(map.get("nodeCode"));
 				//插入转接log
@@ -95,7 +91,7 @@ public class GetCallData extends com.avaya.sce.runtime.BasicServlet {
 				transfervo.setCallNum(ani.getStringValue());
 				transfervo.setCalledNum(dnis.getStringValue());
 				callidField.setValue(map.get("callId2"));
-				agentIdField.setValue(map.get("agentId"));
+				agentIdField.setValue(map.get("AgentID"));
 				logs.debug("转接agentId===="+agentIdField.getStringValue());
 				try {
 					// AppUtil.saveTransferLog(transfervo);
@@ -103,9 +99,9 @@ public class GetCallData extends com.avaya.sce.runtime.BasicServlet {
 					// e.printStackTrace();
 				}
 				
-			}else if(StringUtils.isNotEmpty(map.get("agentId"))){
+			}else if(StringUtils.isNotEmpty(map.get("AgentID"))){
 				nodecode.setValue("1");
-				agentIdField.setValue(map.get("agentId"));
+				agentIdField.setValue(map.get("AgentID"));
 				logs.debug("nodecode ===> 1 , AgentID === > " + agentIdField.getStringValue());
 			}else{
 				//挂机

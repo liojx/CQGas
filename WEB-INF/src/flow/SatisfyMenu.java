@@ -17,7 +17,6 @@ public class SatisfyMenu extends com.avaya.sce.runtime.Menu {
 	public SatisfyMenu() {
 		//{{START:CLASS:CONSTRUCTOR
 		super();
-		setNeedsDefaultDisconnectHandler(false);
 		//}}END:CLASS:CONSTRUCTOR
 	}
 
@@ -64,7 +63,7 @@ public class SatisfyMenu extends com.avaya.sce.runtime.Menu {
 	public java.util.Collection getEvents(com.avaya.sce.runtimecommon.SCESession mySession) {
 		java.util.List list;
 		com.avaya.sce.runtime.Event event;
-		list = new java.util.ArrayList(3);
+		list = new java.util.ArrayList(2);
 		java.util.List eventPromptNames = null;
 		String ___tempPromptName = null;
 
@@ -80,8 +79,6 @@ public class SatisfyMenu extends com.avaya.sce.runtime.Menu {
 		eventPromptNames.add(new com.avaya.sce.runtime.PromptRefInfo("Nomatch_004", ""));
 
 		event = new com.avaya.sce.runtime.Event(com.avaya.sce.runtimecommon.SCERT.EVENT_NOMATCH, (com.avaya.sce.runtime.PromptRefInfo[])eventPromptNames.toArray(new com.avaya.sce.runtime.PromptRefInfo[0]), new com.avaya.sce.runtime.Goto("ThreeCtsCopy8", 3, true, ""));
-		list.add(event);
-		event = new com.avaya.sce.runtime.OnDisconnect("End", false);
 		list.add(event);
 		return(list);
 	}
