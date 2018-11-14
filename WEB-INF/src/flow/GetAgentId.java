@@ -66,6 +66,7 @@ public class GetAgentId extends com.avaya.sce.runtime.BasicServlet {
 		IVariableField satisfyField = mySession.getVariableField(IProjectVariables.CQVALUE, IProjectVariables.CQVALUE_FIELD_SATISFYFLAG);
 		String tempUui =  uui.getStringValue();
 		String uuiStr =tempUui.replaceAll(",", "|");
+		uuiStr = uuiStr.substring(0,10);
 		logs.debug("满意度 uuiStr ===> "+uuiStr);
 		Map<String,String> map = TextUtil.toMapForUUI(uuiStr);
 		int i = 0;
