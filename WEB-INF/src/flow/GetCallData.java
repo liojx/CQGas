@@ -83,9 +83,9 @@ public class GetCallData extends com.avaya.sce.runtime.BasicServlet {
 		logs.debug("当前vipFlag ===> " + vipFlagField.getStringValue());
 	
 		if(null!=map){
-			if(StringUtils.isNotEmpty(map.get("nodeCode")) && StringUtils.isNotEmpty(map.get("AgentID"))){
+			if(StringUtils.isNotEmpty(map.get("nodeCode")) && StringUtils.isNotEmpty(map.get("agentId"))){
 				nodecode.setValue("9");
-			}else if(StringUtils.isNotEmpty(map.get("nodeCode")) && StringUtils.isEmpty(map.get("AgentID"))){
+			}else if(StringUtils.isNotEmpty(map.get("nodeCode")) && StringUtils.isEmpty(map.get("agentId"))){
 				TransferVO transfervo = new TransferVO();
 				nodecode.setValue(map.get("nodeCode"));
 				//插入转接log
@@ -98,14 +98,14 @@ public class GetCallData extends com.avaya.sce.runtime.BasicServlet {
 				agentIdField.setValue(map.get("agentId"));
 				logs.debug("转接agentId===="+agentIdField.getStringValue());
 				try {
-					AppUtil.saveTransferLog(transfervo);
+					// AppUtil.saveTransferLog(transfervo);
 				} catch (Exception e) {
-					e.printStackTrace();
+					// e.printStackTrace();
 				}
 				
-			}else if(StringUtils.isNotEmpty(map.get("AgentID"))){
+			}else if(StringUtils.isNotEmpty(map.get("agentId"))){
 				nodecode.setValue("1");
-				agentIdField.setValue(map.get("AgentID"));
+				agentIdField.setValue(map.get("agentId"));
 				logs.debug("nodecode ===> 1 , AgentID === > " + agentIdField.getStringValue());
 			}else{
 				//挂机

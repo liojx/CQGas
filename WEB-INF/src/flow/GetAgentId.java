@@ -71,13 +71,19 @@ public class GetAgentId extends com.avaya.sce.runtime.BasicServlet {
 		int i = 0;
 		try {
 //			AgentVO  vo  =	AppUtil.getAgentVO(callIdField.getStringValue());
+			String callId = "";
+			String agentId = "";
+			if(map != null){
+				callId = map.get("callId2");
+				agentId = map.get("agentId");
+			}
 			SatisfyVO svo  = new SatisfyVO();
-			svo.setCallId(callidField.getStringValue());
+			svo.setCallId(callidField.getStringValue() == null ? callId : null);
 			String uuid = UUID.randomUUID().toString().replaceAll("-", "");
 			logs.debug("满意度mydId==="+uuid);
 			svo.setMydId(uuid);
 			svo.setTelNo(ani.getStringValue());
-			svo.setAgentId(map.get("AgentID"));
+			svo.setAgentId(agentId);
 			logs.debug("满意度agentId==="+svo.getAgentId());
 			i  = AppUtil.saveSatisfy(svo);
 			System.out.println("满意度数据：" + svo.toString());
