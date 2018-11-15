@@ -88,8 +88,8 @@ public class GetAgentId extends com.avaya.sce.runtime.BasicServlet {
 				svo.setCallId(callId);
 				System.out.println("MYD   callId : " + callId);
 				String mydId = UUID.randomUUID().toString().replaceAll("-","");
-				String mydId_t = mydId.substring(0,10);
-				svo.setMydId(mydId_t);
+//				String mydId_t = mydId.substring(0,10);
+				svo.setMydId(mydId);
 				svo.setTelNo(aniField.getStringValue());
 				String agentID = null;
 				if(StringUtils.isNotEmpty(agentIdField.getStringValue())){
@@ -105,7 +105,7 @@ public class GetAgentId extends com.avaya.sce.runtime.BasicServlet {
 				logs.debug("满意度数据："+svo.toString());
 				System.out.println("满意度数据："+svo.toString());
 				i  = AppUtil.saveSatisfy(svo);
-				mydIdField.setValue(mydId_t);
+				mydIdField.setValue(mydId);
 				
 		} catch(EmptyResultDataAccessException e){
 			i=-1;
