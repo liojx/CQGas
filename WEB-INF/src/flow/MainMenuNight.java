@@ -121,7 +121,7 @@ public class MainMenuNight extends com.avaya.sce.runtime.Menu {
 		grammarInfo = new java.util.ArrayList();
 
 
-		choice = new com.avaya.sce.runtime.Choice("业务查询", "4", true, "exact", "print2", grammarInfo, true);
+		choice = new com.avaya.sce.runtime.Choice("业务查询", "4", true, "exact", "BizMenuCopy", grammarInfo, true);
 		list.add(choice);
 
 		// build the list of grammar information objects for the choice
