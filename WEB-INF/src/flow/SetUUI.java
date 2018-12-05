@@ -71,11 +71,41 @@ public class SetUUI extends com.avaya.sce.runtime.BasicServlet {
 		uui.setValue(TextUtil.fromatUUIFromMap(map));
 		 logs.debug("转人工uui数据为："+uui.getStringValue());
 		 logs.debug("当前的menucode = "+ mainMenuField.getShortValue());
-		 if("1".equals(mainMenuField.getStringValue())){
-			 csrNumField.setValue("7003");
-		 }else{
-			 csrNumField.setValue("7002");
-		 }
+		 
+		 String menuCodeStr = mainMenuField.getStringValue();
+		switch (menuCodeStr) {
+		case "1":
+			csrNumField.setValue("7001");
+			break;
+		case "2":
+			csrNumField.setValue("7002");
+			break;
+		case "3":
+			csrNumField.setValue("7003");
+			break;
+		case "4":
+			csrNumField.setValue("7004");
+			break;
+		case "5":
+			csrNumField.setValue("7005");
+			break;
+		case "6":
+			csrNumField.setValue("7006");
+			break;
+		case "7":
+			csrNumField.setValue("7007");
+			break;
+		case "0":
+			csrNumField.setValue("7002");
+			break;
+		default:
+			break;
+		}
+//		 if("1".equals(mainMenuField.getStringValue())){
+//			 csrNumField.setValue("7003");
+//		 }else{
+//			 csrNumField.setValue("7002");
+//		 }
 		 
 		 //menuCode=1查询气费  menuCode=2 事故报警  menuCode=3 服务申请  menuCode=4 投诉建议 menuCode=5 公告信息 menuCode=7 安全用气常识  menuCode=0主菜单转的人工
 		 //软电话获取随路数据   softphone.CallInfo.AttachData("menuCode")
