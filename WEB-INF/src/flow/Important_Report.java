@@ -108,7 +108,7 @@ public class Important_Report extends com.avaya.sce.runtime.Form {
 		// build the list of prompt names
 		list = new java.util.ArrayList(1);
 		
-		list.add(new com.avaya.sce.runtime.PromptRefInfo("Important_Report", ""));
+		list.add(new com.avaya.sce.runtime.PromptRefInfo("Important_Report", "English"));
 
 		return(list);
 	}
