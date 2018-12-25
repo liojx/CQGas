@@ -189,4 +189,13 @@
         <comments/>
         <audiofile>ThankYou.wav</audiofile>
     </phrase>
+    <phrase version="1.0">
+        <displayname>promptAgent</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>promptAgent.wav</audiofile>
+    </phrase>
 </phraseset>

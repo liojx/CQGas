@@ -108,7 +108,7 @@ public class PromptAgentNo extends com.avaya.sce.runtime.Form {
 		// build the list of prompt names
 		list = new java.util.ArrayList(1);
 		
-		list.add(new com.avaya.sce.runtime.PromptRefInfo("PromptAgentNo", ""));
+		list.add(new com.avaya.sce.runtime.PromptRefInfo("PromptAgentNo", "English"));
 
 		return(list);
 	}
