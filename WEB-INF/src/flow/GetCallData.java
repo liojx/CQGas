@@ -10,6 +10,7 @@ import org.apache.log4j.Logger;
 import beans.CallLogVO;
 import beans.TransferVO;
 
+import com.avaya.sce.runtime.SimpleVariable;
 import com.avaya.sce.runtimecommon.IVariableField;
 import com.cqgas.tools.util.AppUtil;
 import com.cqgas.tools.util.DateUtil;
@@ -77,6 +78,13 @@ public class GetCallData extends com.avaya.sce.runtime.BasicServlet {
 		Map<String,String> map = TextUtil.toMapForUUI(uuiStr);
 		logs.debug("当前nodeCode ===> " +  (null!=map?map.get("nodeCode") : ""));
 		logs.debug("当前agentId-->" + map.get("agentId")+",AgentID-->"+map.get("AgentID"));
+		
+		IVariableField gh = mySession.getVariableField(IProjectVariables.CQVALUE, IProjectVariables.CQVALUE_FIELD_GH);
+		if(StringUtils.isNotEmpty(map.get("agentId"))){
+			gh.setValue(map.get("agentId"));
+		}else if(StringUtils.isNotEmpty(map.get("AgentID"))){
+			gh.setValue(map.get("AgentID"));
+		}
 	
 		if(null!=map){
 			if(StringUtils.isNotEmpty(map.get("nodeCode")) && (StringUtils.isNotEmpty(map.get("agentId")) || StringUtils.isNotEmpty(map.get("AgentID")))){
@@ -166,5 +174,12 @@ public class GetCallData extends com.avaya.sce.runtime.BasicServlet {
 		list.add(aGoto);
 
 		return list;
+	}
+	
+	public static void main(String[] args) {
+		String [] arr = "99984".split("");
+		for(String s : arr){
+			System.out.println(s);
+		}
 	}
 }

@@ -81,6 +81,20 @@ public class Start extends com.avaya.sce.runtime.Entry {
 		session.putVariable(variable);
 
 		variableFields = new String[] {
+			IProjectVariables.NUM_FIELD_EIGHT,
+			IProjectVariables.NUM_FIELD_FIVE,
+			IProjectVariables.NUM_FIELD_FOUR,
+			IProjectVariables.NUM_FIELD_NINE,
+			IProjectVariables.NUM_FIELD_ONE,
+			IProjectVariables.NUM_FIELD_SEVEN,
+			IProjectVariables.NUM_FIELD_SIX,
+			IProjectVariables.NUM_FIELD_THREE,
+			IProjectVariables.NUM_FIELD_TWO,
+			IProjectVariables.NUM_FIELD_ZERO };
+		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.NUM, variableFields, new String[] {"8", "5", "4", "9", "1", "7", "6", "3", "2", "0"}, null, session, false, false );
+		session.putVariable(variable);
+
+		variableFields = new String[] {
 			IProjectVariables.GAS_FEE_QRY_FIELD_CONFIDENCE,
 			IProjectVariables.GAS_FEE_QRY_FIELD_INPUTMODE,
 			IProjectVariables.GAS_FEE_QRY_FIELD_INTERPRETATION,
@@ -171,6 +185,9 @@ public class Start extends com.avaya.sce.runtime.Entry {
 		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.NOTICE_MENU, variableFields, null, session, false, false );
 		session.putVariable(variable);
 
+		variable = com.avaya.sce.runtime.SimpleVariable.createSimpleVariable(IProjectVariables.LEN, "", null, session, false, false );
+		session.putVariable(variable);
+
 		variableFields = new String[] {
 			IProjectVariables.REPLAY_FEE_INFO_FIELD_CONFIDENCE,
 			IProjectVariables.REPLAY_FEE_INFO_FIELD_INPUTMODE,
@@ -217,6 +234,7 @@ public class Start extends com.avaya.sce.runtime.Entry {
 			IProjectVariables.CQVALUE_FIELD_ERRORCOUNT_8,
 			IProjectVariables.CQVALUE_FIELD_ERRORCOUNT_9,
 			IProjectVariables.CQVALUE_FIELD_FEERESULT,
+			IProjectVariables.CQVALUE_FIELD_GH,
 			IProjectVariables.CQVALUE_FIELD_KHID,
 			IProjectVariables.CQVALUE_FIELD_MYDID,
 			IProjectVariables.CQVALUE_FIELD_NODECODE,
@@ -224,7 +242,7 @@ public class Start extends com.avaya.sce.runtime.Entry {
 			IProjectVariables.CQVALUE_FIELD_SATISFYFLAG,
 			IProjectVariables.CQVALUE_FIELD_VIPFLAG,
 			IProjectVariables.CQVALUE_FIELD_YQZH };
-		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.CQVALUE, variableFields, new String[] {"", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "0", ""}, null, session, false, false );
+		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.CQVALUE, variableFields, new String[] {"", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "0", ""}, null, session, false, false );
 		variable.getComplexVariable().getField(IProjectVariables.CQVALUE_FIELD_ERRORCOUNT_5).setAttribute(com.avaya.sce.runtimecommon.IVariableField.VARATTR_PRIVATE, true);
 		session.putVariable(variable);
 
@@ -326,6 +344,12 @@ public class Start extends com.avaya.sce.runtime.Entry {
 			IProjectVariables.TRANSFER_AGENT_FIELD_UCID,
 			IProjectVariables.TRANSFER_AGENT_FIELD_UUI };
 		variable = com.avaya.sce.runtime.ComplexVariable.createComplexVariable(IProjectVariables.TRANSFER_AGENT, variableFields, null, session, false, false );
+		session.putVariable(variable);
+
+		variable = com.avaya.sce.runtime.SimpleVariable.createSimpleVariable(IProjectVariables.IDX, "1", null, session, false, false );
+		session.putVariable(variable);
+
+		variable = com.avaya.sce.runtime.SimpleVariable.createSimpleVariable(IProjectVariables.CUR__G, "", null, session, false, false );
 		session.putVariable(variable);
 
 		variableFields = new String[] {

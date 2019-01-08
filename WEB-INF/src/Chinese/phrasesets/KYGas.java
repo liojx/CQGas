@@ -1,4 +1,4 @@
-package English.phrasesets;
+package Chinese.phrasesets;
 
 /**
  * This phraseset class will be automatically populated with data from the 

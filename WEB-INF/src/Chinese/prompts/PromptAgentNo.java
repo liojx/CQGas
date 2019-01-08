@@ -36,11 +36,7 @@ public class PromptAgentNo extends com.avaya.sce.runtime.Prompt {
 		setTimeout(1,8000);
 		setBargin(1,true);
 
-		format = new com.avaya.sce.runtime.Format();
-		format.add(com.avaya.sce.runtime.Format.FORMAT,com.avaya.sce.runtime.Format.FMT_TEXT);
-		add(1, new com.avaya.sce.runtime.PromptElement(com.avaya.sce.runtime.PromptElement.VARIABLE_TEXT,"CQValue:agentid", format));
-
-		add(1, new com.avaya.sce.runtime.PromptElement(com.avaya.sce.runtime.PromptElement.TEXT,"号话务员为您服务！", null));
+		add(1, new com.avaya.sce.runtime.PromptElement(com.avaya.sce.runtime.PromptElement.PHRASESET,"KYGas:promptAgent",false));
 
 	}
 }

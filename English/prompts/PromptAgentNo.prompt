@@ -9,14 +9,6 @@
                 <Property name="BargeIn" value="true"/>
             </Properties>
             <ChildItems>
-                <Segment class="com.avaya.sce.prompts.internal.segment.TextVariable" type="TextVariable">
-                    <Properties>
-                        <Property name="Name" value="CQValue"/>
-                        <Property name="Format" value="digits"/>
-                        <Property name="Field" value="agentid"/>
-                    </Properties>
-                    <ChildItems/>
-                </Segment>
                 <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
                         <Property name="Phrase" value="promptAgent"/>
