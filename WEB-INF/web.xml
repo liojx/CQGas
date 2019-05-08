@@ -447,6 +447,10 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>rout</servlet-name>
         <servlet-class>flow.rout</servlet-class>
     </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1546">
+        <servlet-name>judgeDayOrNightData_c2</servlet-name>
+        <servlet-class>flow.judgeDayOrNightData_c2</servlet-class>
+    </servlet>
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
         <url-pattern>/AvayaDefaultDisconnectHandler</url-pattern>
@@ -822,6 +826,10 @@ Copyright 2004-2011 Avaya Inc.
     <servlet-mapping id="SAGE-callflow-servletmapping_main_1535">
         <servlet-name>rout</servlet-name>
         <url-pattern>/rout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1546">
+        <servlet-name>judgeDayOrNightData_c2</servlet-name>
+        <url-pattern>/judgeDayOrNightData_c2</url-pattern>
     </servlet-mapping>
     
     

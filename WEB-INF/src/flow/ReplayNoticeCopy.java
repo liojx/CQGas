@@ -114,7 +114,7 @@ public class ReplayNoticeCopy extends com.avaya.sce.runtime.Menu {
 		grammarInfo = new java.util.ArrayList();
 
 
-		choice = new com.avaya.sce.runtime.Choice("返回上一级", "*", true, "exact", "BizMenu", grammarInfo, true);
+		choice = new com.avaya.sce.runtime.Choice("返回上一级", "*", true, "exact", "judgeDayOrNightData_c2", grammarInfo, true);
 		list.add(choice);
 
 		return(list);
