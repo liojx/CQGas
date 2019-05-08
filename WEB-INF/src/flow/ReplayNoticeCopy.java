@@ -100,7 +100,7 @@ public class ReplayNoticeCopy extends com.avaya.sce.runtime.Menu {
 		java.util.List list = null;
 		com.avaya.sce.runtime.Choice choice = null;
 		java.util.Collection grammarInfo = null;
-		list = new java.util.ArrayList(3);
+		list = new java.util.ArrayList(2);
 		String ___tempGrammarName = null;
 
 		// build the list of grammar information objects for the choice
@@ -108,13 +108,6 @@ public class ReplayNoticeCopy extends com.avaya.sce.runtime.Menu {
 
 
 		choice = new com.avaya.sce.runtime.Choice("重听", "9", true, "exact", "judgeBtn", grammarInfo, true);
-		list.add(choice);
-
-		// build the list of grammar information objects for the choice
-		grammarInfo = new java.util.ArrayList();
-
-
-		choice = new com.avaya.sce.runtime.Choice("人工", "0", true, "exact", "ToRenGong", grammarInfo, true);
 		list.add(choice);
 
 		// build the list of grammar information objects for the choice
